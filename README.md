@@ -66,15 +66,15 @@ The application requires below set of SAP Cloud Platform Entitlements/Quota
 
 ## Configuration
 
-### Step 1: [Check Prerequisites](https://github.wdf.sap.corp/D034841/GeoRel/blob/master/documentation/mission/Prerequisites/README.md)
+### Step 1: [Check Prerequisites](./documentation/mission/Prerequisites/README.md)
 
-### Step 2: [Setup SAP Cloud Platform and S/4HANA Cloud](https://github.wdf.sap.corp/D034841/GeoRel/blob/master/documentation/mission/Setup%20Cloud%20Platform%20and%20S4HANA/README.md)
+### Step 2: [Setup SAP Cloud Platform and S/4HANA Cloud](./documentation/mission/Setup%20Cloud%20Platform%20and%20S4HANA/README.md)
 
-### Step 3: [Prepare Development Environment and Install Application](https://github.wdf.sap.corp/D034841/GeoRel/blob/master/documentation/mission/Development%20Environment%20and%20Application/README.md)
+### Step 3: [Prepare Development Environment and Install Application](./documentation/mission/Development%20Environment%20and%20Application/README.md)
 
-### Step 4: [Configure and Run Application](https://github.wdf.sap.corp/D034841/GeoRel/blob/master/documentation/mission/Configure%20and%20Run%20Example%20Application/README.md)
+### Step 4: [Configure and Run Application](documentation/mission/Configure%20and%20Run%20Example%20Application/README.md)
 
-### Step 5: [Demo Script](https://github.wdf.sap.corp/D034841/GeoRel/tree/master/documentation/mission/Demo%20Script)
+### Step 5: [Demo Script](documentation/mission/Demo%20Script)
 
 ## Known Issues
 
@@ -82,7 +82,7 @@ No known issues.
 
 ## How to Obtain Support
 
-In case you find a bug, or you need additional support, please [open an issue](https://github.com/SAP-samples/cloud-extension-s4hana-business-process/issues/new) here in GitHub.
+In case you find a bug, or you need additional support, please [open an issue](https://github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process/issues/new) here in GitHub.
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
