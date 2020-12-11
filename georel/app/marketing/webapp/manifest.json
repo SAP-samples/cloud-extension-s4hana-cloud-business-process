@@ -1,0 +1,106 @@
+{
+    "_version": "1.8.0",
+    "sap.app": {
+        "id": "georel",
+        "type": "application",
+        "title": "Manage Geo Relations",
+        "description": "CAP based application connected to S4H via events",
+        "i18n": "i18n/i18n.properties",
+        "dataSources": {
+            "GeorelService": {
+                "uri": "/georel/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "4.0"
+                }
+            }
+        },
+        "-sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "-id": "ui5template.smartTemplate",
+            "-version": "1.40.12"
+        }
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "libs": {
+                "sap.fe": {}
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "": {
+                "dataSource": "GeorelService",
+                "settings": {
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect" : true,
+                    "earlyRequests": true,
+                    "groupProperties": {
+                        "default": {
+                            "submit": "Auto"
+                        }
+                    }
+                }
+            }
+        },
+        "routing": {
+            "routes": [
+                {
+                    "pattern": ":?query:",
+                    "name": "BuPaList",
+                    "target": "BuPaList"
+                },
+                {
+                    "pattern": "CustomerProcesses({key}):?query:",
+                    "name": "BuPaDetails",
+                    "target": "BuPaDetails"
+                }
+            ],
+            "targets": {
+                "BuPaList": {
+                    "type": "Component",
+                    "id": "BuPaList",
+                    "name": "sap.fe.templates.ListReport",
+                    "options": {
+                        "settings" : {
+                            "entitySet" : "CustomerProcesses",
+                            "navigation" : {
+                                "CustomerProcesses" : {
+                                    "detail" : {
+                                        "route" : "BuPaDetails"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "BuPaDetails": {
+                    "type": "Component",
+                    "id": "BuPaDetailsList",
+                    "name": "sap.fe.templates.ObjectPage",
+                    "options": {
+                        "settings" : {
+                            "entitySet" : "CustomerProcesses"
+                        }
+                    }
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "fullWidth": false
+    },
+    "sap.fiori": {
+        "registrationIds": [],
+        "archeType": "transactional"
+    }
+}
