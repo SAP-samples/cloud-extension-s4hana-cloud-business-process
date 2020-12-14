@@ -1,4 +1,5 @@
 # Build an Event-Driven Extension of SAP S/4HANA Cloud
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process)](https://api.reuse.software/info/github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process)
 
 ![georel](./documentation/images/georel.jpg)
 
