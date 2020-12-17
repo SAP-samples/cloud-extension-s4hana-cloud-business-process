@@ -230,7 +230,8 @@ been prefilled for you.
 - As “systemName” you must enter the name of your newly registered system.
 - As “communicationArrangementName” you must enter a speaking name for your communication arrangement.
 - For more information, see:
-https://help.sap.com/viewer/7b98ddc13f8d4a3ba08a74042a0baa7f/Cloud/e n-US/553a4c6b98be4c1ba7d1dfa0e9df8669.html
+
+https://help.sap.com/viewer/7b98ddc13f8d4a3ba08a74042a0baa7f/Cloud/en-US/553a4c6b98be4c1ba7d1dfa0e9df8669.html
 
 ```
 {
