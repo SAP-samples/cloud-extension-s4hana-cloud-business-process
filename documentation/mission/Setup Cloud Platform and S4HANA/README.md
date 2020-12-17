@@ -161,18 +161,18 @@ To allow SAP Cloud Platform applications to consume events and APIs from SAP S/4
 
 2. Go to the Service Marketplace and click on *SAP S/4HANA Cloud Extensibility*
 
- ![Marketplace](./images/setup16.png)
+ ![Marketplace](./images/setup15.png)
 
 
 3. Click on *Create Instance*.
 
 
- ![Instance](./images/setup17.png)
+ ![Instance](./images/setup16.png)
 
 4. In the Create Instance wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance.
 
 
- ![Plan](./images/setup18.png)
+ ![Plan](./images/setup17.png)
 
 
 5. Click *Next*
@@ -194,7 +194,7 @@ been prefilled for you.
 }
 ``` 
 
- ![Parameters](./images/setup19.png)
+ ![Parameters](./images/setup18.png)
 
 
 7. Click *Create Instance*. The newly created instance appears in the list of instances in the Instance panel.
