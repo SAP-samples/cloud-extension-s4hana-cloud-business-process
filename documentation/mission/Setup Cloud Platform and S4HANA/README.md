@@ -194,7 +194,7 @@ been prefilled for you.
 }
 ``` 
 
- ![Parameters](./images/setup18.png)
+ ![Parameters](./images/setup20.png)
 
 
 7. Click *Create Instance*. The newly created instance appears in the list of instances in the Instance panel.
@@ -206,7 +206,7 @@ been prefilled for you.
 2. Go to the Service Marketplace and click on SAP S/4HANA Cloud Extensibility
 
 
- ![Extensibility](./images/setup20.png)
+ ![Extensibility](./images/setup21.png)
 
 
 3. Click on Create Instance.
