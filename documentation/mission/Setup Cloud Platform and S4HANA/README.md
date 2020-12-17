@@ -289,7 +289,7 @@ https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa071
 
 1. Log onto your SAP S/4HANA Cloud system
 
-2. Go to the Implementation Cockpit and choose Enterprise Event Enablement
+2. Go to Enterprise Event Enablement
 
 
  ![Event Enablement](./images/setup24.png)
