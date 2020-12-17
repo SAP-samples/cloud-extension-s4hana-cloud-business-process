@@ -4,7 +4,7 @@ With the app coding ready on your device, you now need to perform a few steps to
   
 In detail you have to adapt the *manifest.yaml* , the *package.json* and the *service.js* files.
 
-1. Find the *manifest.yaml* in the top folder of >your folder</georel , open it and perform these
+1. Find the *manifest.yaml* in your installation folder , open it and perform these
 adjustments
   
  ![Manifest](./images/run1.png)
@@ -13,7 +13,7 @@ adjustments
   
  ![Services](./images/run2.png)
   
-2. In a next step go to >your folder</georel/georel/srv and open the file service.js with the editor of your choice.
+2. In a next step go to >installation folder< /georel/srv and open the file service.js with the editor of your choice.
   
  ![service file](./images/run3.png)  
   
@@ -39,7 +39,7 @@ cf login
 ```
 
 2. Login to the account and space with *cf login*.
-3. Navigate into the root folder >your folder</georel (or your directory name) 
+3. Navigate to the folder >installation folder</
 4. Ensure you are in the folder that contains the *manifest.yaml* file.
 5. Execute the following command: 
 
