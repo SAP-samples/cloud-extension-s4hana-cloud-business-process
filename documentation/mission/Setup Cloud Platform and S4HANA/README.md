@@ -145,6 +145,8 @@ In the next steps you will configure the entitlements and assign the correspondi
 
 5. Press *Save*.
 
+**Check**
+
 Your activities should result in a screen like this:
 
  ![Screen](./images/setup14.png)
@@ -166,15 +168,12 @@ To allow SAP Cloud Platform applications to consume events and APIs from SAP S/4
 
 3. Click on *Create Instance*.
 
-
  ![Instance](./images/setup16.png)
 
 4. In the Create Instance wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance.
 
-
  ![Plan](./images/setup17.png)
-
-
+ 
 5. Click *Next*
 
 6. In the Specify Parameters dialog box, use the following template, which should have
