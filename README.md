@@ -52,7 +52,7 @@ The GeoRel extension application is developed using the SAP Cloud Application pr
 ### For local development you would require the following:
 * [Node js](https://nodejs.org/en/download/)
 * [Cloud Foundry Command Line Interface (CLI)](https://github.com/cloudfoundry/cli#downloads)
-* [Visual Studio Code](https://code.visualstudio.com/download)
+* [Visual Studio Code](https://code.visualstudio.com/download) or another suitable IDE or editor of your choice
 * [SQLite ](https://sqlite.org/download.html)
 
 ### Entitlements
