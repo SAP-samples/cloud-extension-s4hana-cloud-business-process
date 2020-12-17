@@ -236,34 +236,58 @@ https://help.sap.com/viewer/7b98ddc13f8d4a3ba08a74042a0baa7f/Cloud/en-US/553a4c6
 
 ```
 {
-"systemName": "<SYSTEM NAME>", "communicationArrangement": {
-"communicationArrangementName": "<ARRANGEMENT NAME>", "scenarioId": "SAP_COM_0008",
-"inboundAuthentication": "BasicAuthentication", "outboundAuthentication": 
-"BasicAuthentication", "outboundServices": [
-{
-"name": "Replicate Customers from S/4 System to Client", "isServiceActive": false
-}, {
-"isServiceActive": false },
-{
-"name": "Replicate Company Addresses from S/4 System to Client",
-"isServiceActive": false },
-{
-"name": "Replicate Workplace Addresses from S/4 System to Client", "isServiceActive": false
-}, {
-"isServiceActive": false },
-{
-"name": "Business Partner - Replicate from SAP S/4HANA Cloud to Client", "isServiceActive": false
-}, {
-"isServiceActive": false },
-{
-"name": "Business Partner - Send Confirmation from SAP S/4HANA Cloud to Client", "isServiceActive": false
-}, {
-"isServiceActive": false }
-], "communicationSystem": {
-"communicationSystemHostname": "https://default.com", "outboundCommunicationUser": {
-"username": "DefaultUser",
-"password": "DefaultPassword" }
-} }
+    "systemName": "<SYSTEM NAME>",
+    "communicationArrangement": {
+        "communicationArrangementName": "<ARRANGEMENT NAME>",
+        "scenarioId": "SAP_COM_0008",
+        "inboundAuthentication": "BasicAuthentication",
+        "outboundAuthentication": "BasicAuthentication",
+        "outboundServices": [
+            {
+                "name": "Replicate Customers from S/4 System to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "Replicate Suppliers from S/4 System to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "Replicate Company Addresses from S/4 System to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "Replicate Workplace Addresses from S/4 System to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "Replicate Personal Addresses from S/4 System to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "Business Partner - Replicate from SAP S/4HANA Cloud to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "Business Partner Relationship - Replicate from SAP S/4HANA Cloud to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "Business Partner - Send Confirmation from SAP S/4HANA Cloud to Client",
+                "isServiceActive": false
+            },
+            {
+                "name": "BP Relationship - Send Confirmation from SAP S/4HANA Cloud to Client",
+                "isServiceActive": false
+            }
+        ],
+        "communicationSystem": {
+            "communicationSystemHostname": "default.com",
+            "outboundCommunicationUser": {
+                "username": "DefaultUser",
+                "password": "DefaultPassword"
+            }
+        }
+    }
 }
 ```
 
