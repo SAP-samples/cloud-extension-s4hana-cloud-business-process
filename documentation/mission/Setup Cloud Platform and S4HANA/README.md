@@ -205,10 +205,6 @@ been prefilled for you.
 
 2. Go to the Service Marketplace and click on SAP S/4HANA Cloud Extensibility
 
-
- ![Extensibility](./images/setup21.png)
-
-
 3. Click on Create Instance.
 
 4. In the *Create Instance wizard* in the Service dropdown list, select the service *SAP S/4HANA Cloud Extensibility*.
@@ -288,7 +284,7 @@ been prefilled for you.
 }
 ```
 
-- For more information, check:
+For more information, check:
 
 https://help.sap.com/viewer/7b98ddc13f8d4a3ba08a74042a0baa7f/Cloud/en-US/553a4c6b98be4c1ba7d1dfa0e9df8669.html
 
