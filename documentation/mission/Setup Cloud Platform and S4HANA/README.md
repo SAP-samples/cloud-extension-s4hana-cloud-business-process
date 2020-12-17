@@ -121,10 +121,6 @@ In the next steps you will configure the entitlements and assign the correspondi
 
 3. In the *Service Details: Enterprise Messaging screen area*, select the *default* service plan
 
- ![Service Plan](./images/setup13.png)
-
-
-
 4. Press the *Add 1 Service Plan* button to add this entitlement for the Enterprise Messaging service for your subaccount.
 
 5. Press *Save*.
@@ -138,7 +134,7 @@ In the next steps you will configure the entitlements and assign the correspondi
 
 2. In the *Subaccount Entitlements* dialog box, select the service *Application Runtime*
 
- ![AR](./images/setup14.png)
+ ![AR](./images/setup13.png)
 
 
 3. In the *Service Details: Enterprise Messaging* screen area, select the following service plan:
@@ -151,7 +147,7 @@ In the next steps you will configure the entitlements and assign the correspondi
 
 Your activities should result in a screen like this:
 
- ![Screen](./images/setup15.png)
+ ![Screen](./images/setup14.png)
 
 
 
