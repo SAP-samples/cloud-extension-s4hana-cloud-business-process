@@ -22,12 +22,14 @@ npm config set @sap:registry https://npm.sap.com
 
 Either clone the code from GitHub or download and extract the ZIP file provided to your local file system >your installation folder<.
   
-Navigate into the folder in which the package.json is located, which should be >your installation folder</georel/georel
+Navigate into the folder in which the package.json is located, which should be >your installation folder</georel
+
+Run the two commands below:
 
 ```
-Run npm install
+npm install
 
-Run npm install sqlite3 -D
+npm install sqlite3 -D
 ```
 
 Hint: In case of issues/errors, please make sure that your node installation is up to date.
