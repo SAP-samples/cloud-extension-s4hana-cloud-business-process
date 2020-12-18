@@ -19,9 +19,7 @@ This scenario showcases:
 
 ## Business Scenario
 
-The below business scenario is used to showcase how to build an S/4HANA Cloud Extension Application on SAP Cloud Platform:
-
-In specific focus regions, we would like to follow up with newly created customers or existing customers that have had their data updated in our S/4HANA Cloud backend. External call center employees should do this follow up for us by contacting relevant customers by phone. At the same time, the call center employees have no access to our SAP S/4HANA system. We therefore provide a custom built extension application that is specifically designed and optimized for the task and that is supplied with relevant data in real time using an event-driven approach. 
+In specific focus regions, we would like to follow up with newly created customers or existing customers that have had their data updated in our SAP S/4HANA Cloud backend. External call center employees should do this follow up for us by contacting relevant customers by phone. At the same time, the call center employees have no access to our SAP S/4HANA system. We therefore provide a custom built extension application that is specifically designed and optimized for the task and that is supplied with relevant data in real time using an event-driven approach. 
 
 ![georel](./documentation/images/app.png)
 
