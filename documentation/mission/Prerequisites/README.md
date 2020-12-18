@@ -8,14 +8,14 @@ The SAP Cloud Platform extensions concept provides:
 - Ease of discovery and consumption of **APIs and events**
 - Central **event bus** for all event sources (SAP Cloud Platform Enterprise Messaging)
 
-The Extensibility services are fully integrated in the SAP Cloud Platform Cockpit where you can register your SAP S/4HANA Cloud systems (release 1905 and higher). They support extension applications that run on Cloud Foundry runtime (not Neo). We will use the SAP S/4HANA Cloud Extensibility service available from SAP Cloud Platform Service Marketplace.
+The Extensibility services are fully integrated in the SAP Cloud Platform Cockpit where you can register your SAP S/4HANA Cloud systems (release 1905 and higher). They support extension applications that run on Cloud Foundry runtime (not Neo). We will use the SAP S/4HANA Cloud Extensibility service available from the SAP Cloud Platform Service Marketplace.
 
 # Steps
 
 Following the how-to guides provided, you will:
 
-- Check on and ideally fulfill the **prerequisites**
-- **Register your SAP S/4HANA Cloud backend** (release 1905 or higher) on SAP Cloud Platform
+- Check on the **prerequisites**
+- **Register your SAP S/4HANA Cloud backend** (release 1905 or higher) on the SAP Cloud Platform
 - Set up service plan **entitlements** (SAP S/4HANA Cloud Extensibility and SAP Cloud Platform Enterprise Messaging) for your newly registered system from your SAP Cloud Platform subaccount
 - Create **service instances** of the SAP S/4HANA Cloud Extensibility service 
 - **Configure events** in your SAP S/4HANA Cloud system to send Business Partner Created and Business Partner Changed events to SAP Cloud Platform Enterprise Messaging
