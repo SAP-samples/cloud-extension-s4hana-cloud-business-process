@@ -5,7 +5,7 @@
    
 2. Find the URL for the Geo Relations app - this is the launch URL for the GeoRel application
 
-3. Copy the URL into a browser and the click on the /georelApplication.html link
+3. Copy the URL into a browser and then click on the /georelApplication.html link
 
 4. Click on tile for Geo Relations app
 
