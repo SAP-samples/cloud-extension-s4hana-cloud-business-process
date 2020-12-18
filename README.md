@@ -13,7 +13,7 @@ This scenario showcases:
 
 - Building a side-by-side extension to SAP S/4HANA Cloud
 - Setting up Eventing and consuming events from SAP S/4HANA Cloud via [SAP Cloud Platform Enterprise Messaging](https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/df532e8735eb4322b00bfc7e42f84e8d.html)
-- Consuming APIs from SAP S/4HANA Cloud 
+- Consuming data via API calls from SAP S/4HANA Cloud 
 - Developing an application on SAP Cloud Platform using the [SAP Cloud Application Programming Model(CAP)](https://cap.cloud.sap/docs/)
 - Implementing a SAP Fiori Elements UI
 
@@ -31,8 +31,8 @@ In specific focus regions, we would like to follow up with newly created custome
 
 **Destination - What is the outcome?**
 
-- Changes in S/4HANA communicated via events in real time to extension
-- Custom extension application works independently from S/4HANA
+- Changes in S/4HANA communicated via events in real time to extension application
+- Custom extension application works independently from SAP S/4HANA
 - Call center personnel only needs access to custom app
 
 ## Architecture
@@ -41,7 +41,7 @@ In specific focus regions, we would like to follow up with newly created custome
 
 ![solution diagram](./documentation/images/solutiondiagram.png)
 
-The GeoRel extension application is developed using the SAP Cloud Application programming Model (CAP) and runs on the SAP Cloud Platform. It consumes platform services like Enterprise Messaging and the Connectivity Services. The events generated in S/4HANA Cloud are inserted into the Enterprise messaging queue. The application consumes these events and inserts relevant business partners into the local database. The GeoRel Application uses SAP S/4HANA REST APIs to read Business Partner data from the SAP S/4HANA Cloud system. 
+The extension application is developed using the SAP Cloud Application programming Model (CAP) and runs on the SAP Cloud Platform. It consumes platform services like Enterprise Messaging and the Connectivity Services. The events generated in SAP S/4HANA Cloud are inserted into an Enterprise messaging queue created by CAP. The application consumes these events and inserts relevant business partners into the local database. The extensions application uses SAP S/4HANA APIs to read Business Partner data from the SAP S/4HANA Cloud system. 
 
 ## Requirements
 * SAP S/4HANA Cloud system (release 1905 or newer)
