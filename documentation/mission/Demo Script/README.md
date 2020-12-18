@@ -5,13 +5,13 @@
    
 2. Find the URL for the Geo Relations app - this is the launch URL for the GeoRel application
 
-3. Launch the URL in a browser
+3. Copy the URL into a browser and the click on the /georelApplication.html link
 
 4. Click on tile for Geo Relations app
 
 ![fiori tile](./images/1.png)
 
-5. The list of Customer Process along with thier  status gets displayed
+5. The list of Customer Process along with their status gets displayed
 
 ![BP list](./images/2.png)
 
