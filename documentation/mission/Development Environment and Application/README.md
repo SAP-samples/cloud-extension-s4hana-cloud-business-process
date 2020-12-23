@@ -32,5 +32,11 @@ npm install
 npm install sqlite3 -D
 ```
 
-Hint: In case of issues/errors, please make sure that your node installation is up to date.
+Hint: In case of issues/errors, please make sure that your node installation is up to date. Specifically in case of issues installing sqlite3 on a Mac you could try: 
+
+```
+npm install -g npm@latest 
+
+npm install sqlite3 -g npm@latest
+```
 
