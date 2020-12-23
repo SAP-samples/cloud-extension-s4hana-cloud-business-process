@@ -19,7 +19,7 @@ adjustments
   
 - Enter or adapt the constant for *NAMESPACE*. The namespace of the S/4HANA Cloud system has to be entered. This should be *sap/S4HANAOD/* plus the four character parameter you had picked in an earlier step.
 
-- Check *emClientId* in step 6 of Setup Connectivity and Extensibility --> SAP Cloud Platform Cockpit: Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan “messaging” for enterprise eventing integration if you have doubts.
+HINT: Check *emClientId* in step 6 of Setup Connectivity and Extensibility --> SAP Cloud Platform Cockpit: Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan “messaging” for enterprise eventing integration if you have doubts in respect to the four character parameter.
 
 
 
@@ -32,7 +32,7 @@ https://blogs.sap.com/2019/06/11/sap-cloud-platform-backend-service-tutorial-23-
 To deploy the application perform the following steps:
 
 1. Open command prompt.
-2. Login to the account and space 
+2. Login to the account and space:
 
 ```
 cf login
@@ -47,21 +47,15 @@ cf login
 cf push
 ```
 
-6. Check the console for the final output:
+6. Check the console for the final output and that the deployment has worked out.
 
-Hint: In case of issues (on a Mac) you could try: 
-
-```
-npm install -g npm@latest 
-```
-
-7. Check and remember the URL of your deployed app:
+7. Check and remember the URL of your deployed app.
 
 Example URL: *geo.cfapps.eu10.hana.ondemand.com*
 
 Hint: Using the command *CF apps* you can always look up this information
 
-Note: replace “geo” with the host name which was entered in the *manifest.yaml* file
+Note: replace “geo” with the host name which was entered in the *manifest.yaml* file.
 
 8. Open the URL of your deployed app in a browser. Click on the hyperlink /georelApplication.html
 
