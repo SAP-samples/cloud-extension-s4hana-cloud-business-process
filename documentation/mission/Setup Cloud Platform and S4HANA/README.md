@@ -92,7 +92,7 @@ In the next steps you will configure the entitlements and assign the correspondi
  ![Select Extensibility](./images/setup9.png)
 
 
-5. In the *Service Details: SAP S/4HANA Cloud Extensibility* screen area, select your newly registered system name from the dropdown help to list the available service plans.
+5. In the *Service Details: SAP S/4HANA Cloud Extensibility* screen area, select your newly registered system name from the dropdown help to list the available service plans. These available service plans are:
 
 - *messaging* to consume SAP S/4HANA Cloud events and create event-based extensions using the event bus from SAP Cloud Platform Enterprise Messaging
 - *api-access* for generic access to SAP S/4HANA Cloud APIs
