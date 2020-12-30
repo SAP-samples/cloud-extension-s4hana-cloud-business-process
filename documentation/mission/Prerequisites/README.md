@@ -14,13 +14,13 @@ The Extensibility services are fully integrated in the SAP Cloud Platform Cockpi
 
 Following the how-to guides provided, you will:
 
-- Check on the **prerequisites**
-- **Register your SAP S/4HANA Cloud backend** (release 1905 or higher) on the SAP Cloud Platform
-- Set up service plan **entitlements** (SAP S/4HANA Cloud Extensibility and SAP Cloud Platform Enterprise Messaging) for your newly registered system from your SAP Cloud Platform subaccount
-- Create **service instances** of the SAP S/4HANA Cloud Extensibility service 
-- **Configure events** in your SAP S/4HANA Cloud system to send Business Partner Created and Business Partner Changed events to SAP Cloud Platform Enterprise Messaging
-- Create an **SAP Cloud Platform Enterprise Messaging service instance** to receive Business Partner events from SAP S/4HANA Cloud system
-- *Deploy* the GeoRel extension application on the SAP Cloud Platform. The GeoRel app can be used to track new and changed Business Partners as updates are made in the underlying SAP S/4HANA Cloud system.
+1. Check on the **prerequisites**
+2. **Register your SAP S/4HANA Cloud backend** (release 1905 or higher) on the SAP Cloud Platform
+3. Set up service plan **entitlements** (SAP S/4HANA Cloud Extensibility and SAP Cloud Platform Enterprise Messaging) for your newly registered system from your SAP Cloud Platform subaccount
+4. Create **service instances** of the SAP S/4HANA Cloud Extensibility service 
+5. **Configure events** in your SAP S/4HANA Cloud system to send Business Partner Created and Business Partner Changed events to SAP Cloud Platform Enterprise Messaging
+6. Create an **SAP Cloud Platform Enterprise Messaging service instance** to receive Business Partner events from SAP S/4HANA Cloud system
+7. *Deploy* the extension application on the SAP Cloud Platform. The extension app can be used to track new and changed Business Partners as updates are made in the underlying SAP S/4HANA Cloud system.
 
 # Prerequisites
 
@@ -38,8 +38,8 @@ Cloud system:
     SAP_BR_BPC_EXPERT
 
 - SAP Cloud Platform Cloud Foundry global account (trial accounts are not supported)
-- SAP Cloud Platform subaccount
-- SAP Cloud Platform space
+- SAP Cloud Platform subaccount created
+- SAP Cloud Platform space created
 
 
 
