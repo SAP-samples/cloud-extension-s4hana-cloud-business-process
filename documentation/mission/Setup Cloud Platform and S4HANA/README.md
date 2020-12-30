@@ -240,7 +240,7 @@ been prefilled for you.
 
 8. Copy the template below (please watch for line breaks)
 
-- As “systemName” you must enter the name of your newly registered system.
+- As “systemName” you must enter the name of your newly registered system. The system name should be prefilled in the content you are replacing - so you can just copy it to an editor before and the just copy it back into the template.
 - As “communicationArrangementName” you must enter a speaking name for your communication arrangement.
 
 ```
