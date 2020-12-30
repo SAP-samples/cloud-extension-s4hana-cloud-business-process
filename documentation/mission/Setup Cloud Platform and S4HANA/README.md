@@ -73,6 +73,12 @@ After you have connected the SAP S/4HANA Cloud system (with status *Enabled* in 
 
 In the next steps you will configure the entitlements and assign the corresponding quota and service plans to the subaccount in which the extension application will reside.
 
+Hint: Please note that as a prerequisite both a subaccount with Cloud Foundry enabled and a space need to have been created. In case you have not created a subaccount or a space yet, follow the instructions given in the documentation. Instructions can be found here:
+
+https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a123d3044ae97457a25b3013918.html?q=subaccount
+
+https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22ccf424dae84345f4500c2d8ea.html
+
 ### SAP Cloud Platform
 
 1. In your SAP Cloud Platform Cockpit, open your global account and choose *Entitlements --> Subaccount Assignments*.
