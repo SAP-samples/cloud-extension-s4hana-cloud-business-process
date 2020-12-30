@@ -473,7 +473,7 @@ Once the subscription is completed you'll find additional Role Collections for E
   
 5. Click *Show Assignments*
 
-6. Click *Add Assignment*
+6. Click *Assign Role Collection*
 
 7. Select the Role Collection called *Enterprise Messaging Developer* from the drop-down and click *Assign Role Collection*
 
