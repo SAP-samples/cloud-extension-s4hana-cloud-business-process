@@ -186,7 +186,7 @@ To allow SAP Cloud Platform applications to consume events and APIs from SAP S/4
 
  ![Instance](./images/setup16.png)
 
-4. In the Create Instance wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance.
+4. In the Create Instance wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance (e.g. *georelmessaging*).
 
  ![Plan](./images/setup17.png)
  
