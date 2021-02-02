@@ -19,7 +19,7 @@
 
 7. Go to the *Manage Business Partner Master Data* transaction 
 
-8. Update/create a Business Partner with location US and role *FLC01*
+8. Update/create a Business Partner with location US and role *FLCU01*
 
 ![Business Partner](./images/3.png)
 
