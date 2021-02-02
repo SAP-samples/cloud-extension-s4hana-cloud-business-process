@@ -467,7 +467,7 @@ Once the subscription is completed you'll find additional Role Collections for E
 
 - Select *Subaccount*
 - Select *Security* → *Trust Configuration*
-- Click on your identity provider (e.g. sap.default)
+- Click on your identity provider (e.g. SAP ID Service)
  
 4. Provide email address of user to access eventing UIs
   
