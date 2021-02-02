@@ -400,8 +400,8 @@ When you create a new service instance for Enterprise Messaging, you create a ne
 
 10. Copy the template into the parameter field and adjust relevant data:
 
-- Line 2: emname
-- Line 17 and 26: namespace
+- Line 3: emname
+- Line 11 and 16: namespace
 
 Example:
 
