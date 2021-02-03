@@ -89,7 +89,7 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a1
 
 https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22ccf424dae84345f4500c2d8ea.html
 
-### SAP Cloud Platform
+### SAP Business Technology Platform
 
 1. In your SAP Business Technology Platform Cockpit, open your global account and choose *Entitlements --> Subaccount Assignments*.
 
