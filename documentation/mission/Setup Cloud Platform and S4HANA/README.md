@@ -50,13 +50,13 @@ To be able to do this, in respect to authorizations you must be:
 
  ![New](./images/setup5.png)
 
-4. In the Integration Token field, paste in the integration token generated and copied from the SAP Cloud Platform.
+4. In the Integration Token field, paste in the integration token generated and copied from the SAP Business Technology Platform.
 
  ![Paste](./images/setup6.png)
 
 5. Enter a description for your system integration token.
 
-- Recommendation: use the same name you entered in SAP Cloud Platform when you generated the token.
+- Recommendation: use the same name you entered in SAP Business Technology Platform when you generated the token.
 - Example: >S/4HANA Cloud system name<
 
 6. Choose *Save*.
@@ -64,12 +64,12 @@ To be able to do this, in respect to authorizations you must be:
 - A new entry is displayed for your system in the table with the status *Enabling*.
 - Wait for a few seconds.
 - After the automated integration, the status of your system integration changes to *Enabled*.
-- The same takes place on the SAP Cloud Platform side. You will see the system as *Registered* – potentially after a quick refresh.
+- The same takes place on the SAP Business Technology Platform side. You will see the system as *Registered* – potentially after a quick refresh.
 
 
 ## Set Up Entitlements for Your Subaccount
 
-After you have connected the SAP S/4HANA Cloud system (with status *Enabled* in your SAP S/4HANA Cloud tenant) to the SAP Cloud Platform, you need to configure entitlements to make this system accessible in the SAP Cloud Platform subaccount in which you want to build your extension application.
+After you have connected the SAP S/4HANA Cloud system (with status *Enabled* in your SAP S/4HANA Cloud tenant) to the SAP Business Technology Platform, you need to configure entitlements to make this system accessible in the SAP Business Technology Platform subaccount in which you want to build your extension application.
 
 In the next steps you will configure the entitlements and assign the corresponding quota and service plans to the subaccount in which the extension application will reside.
 
@@ -91,7 +91,7 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 ### SAP Cloud Platform
 
-1. In your SAP Cloud Platform Cockpit, open your global account and choose *Entitlements --> Subaccount Assignments*.
+1. In your SAP Business Technology Platform Cockpit, open your global account and choose *Entitlements --> Subaccount Assignments*.
 
  ![CP Cockpit](./images/setup7.png)
 
@@ -171,7 +171,7 @@ Your activities should result in a screen like this:
 
 # Create Service Instances of SAP S/4HANA Cloud Extensibility Service with Service Plans
 
-To allow SAP Cloud Platform applications to consume events and APIs from SAP S/4HANA Cloud, you need to create the relevant service instances of SAP S/4HANA Cloud Extensibility for the service plans *api-access* and *messaging*.
+To allow SAP Business Technology Platform applications to consume events and APIs from SAP S/4HANA Cloud, you need to create the relevant service instances of SAP S/4HANA Cloud Extensibility for the service plans *api-access* and *messaging*.
 
 **SAP Cloud Platform Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *“messaging”* for enterprise eventing integration
 
@@ -215,7 +215,7 @@ been prefilled for you.
 
 7. Click *Create Instance*. The newly created instance appears in the list of instances in the Instance panel.
 
-**SAP Cloud Platform Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *api-access* to access the BusinessPartner API and enable its usage
+**SAP Business Technology Platform Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *api-access* to access the BusinessPartner API and enable its usage
 
 1. Go to your subaccount and then to your space.
 
@@ -317,7 +317,7 @@ The newly created instance appears in the list of instances in the Instance pane
 
 # Manage Your Solution for Event Handling in SAP S/4HANA Cloud System
 
-You need to enable the events that are to be sent from your SAP S/4HANA Cloud system to SAP Cloud Platform. For this enablement step, go to your SAP S/4HANA system.
+You need to enable the events that are to be sent from your SAP S/4HANA Cloud system to SAP Business Technology Platform. For this enablement step, go to your SAP S/4HANA system.
 
 
 **SAP S/4HANA Cloud: Maintain Event Topics for a Channel**
@@ -368,11 +368,11 @@ https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa071
 
 # Create Enterprise Messaging Instance
 
-**SAP Cloud Platform:** Create a new service instance for SAP Cloud Platform Enterprise Messaging
+**SAP Business Technology Platform:** Create a new service instance for SAP Enterprise Messaging
 
 When you create a new service instance for Enterprise Messaging, you create a new messaging client, which then receives events sent from your registered SAP S/4HANA Cloud system. The parameters you enter in the JSON file are the service descriptors that are later visible on the Messaging Client UI and dictate the rules to be used for creating queues and their subscriptions.
 
-1. Go to the SAP Cloud Platform Cockpit.
+1. Go to the SAP Business Technology Platform Cockpit.
 
 2. Open your subaccount and then your space (in which you want to create the service instance).
 
@@ -432,7 +432,7 @@ In case of it being unclear what namespace to use you can look it up in the SAP 
 
 11. Click on *Create Instance*.
 
-12. Once the instance has been created you can check on it in the SAP Cloud Platform Cockpit
+12. Once the instance has been created you can check on it in the SAP Business Technology Platform Cockpit
 
 
 ![Instance CP Cockpit](./images/setup31.png)
@@ -440,9 +440,9 @@ In case of it being unclear what namespace to use you can look it up in the SAP 
 
 # Enable Enterprise Messaging Cockpit (Optional)
 
-In case that you would like to access the Enterprise Messaging Cockpit, you need to subscribe to SAP Cloud Platform Enterprise Messaging and assign a number of roles to your user.
+In case that you would like to access the Enterprise Messaging Cockpit, you need to subscribe to SAP Enterprise Messaging and assign a number of roles to your user.
 
-Hint: There is no need to access the SAP Cloud Platform Enterprise Messaging Cockpit in this scenario, it would allow for a better understanding though.
+Hint: There is no need to access the SAP Enterprise Messaging Cockpit in this scenario, it would allow for a better understanding though.
 
 1. Subscribe to Enterprise Messaging
 
