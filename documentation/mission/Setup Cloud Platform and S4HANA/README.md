@@ -2,17 +2,17 @@
 
 ## Register Your SAP S/4HANA Cloud System
 
-To build extension applications for your SAP S/4HANA Cloud system, you need to connect your SAP S/4HANA Cloud system to your SAP Cloud Platform global account.
+To build extension applications for your SAP S/4HANA Cloud system, you need to connect your SAP S/4HANA Cloud system to your SAP Business Technology Platform global account.
 
 To be able to do this, in respect to authorizations you must be: 
 
-- an administrator of the SAP Cloud Platform global account 
+- an administrator of the SAP Business Technology Platform global account 
 
 - an administrator of the SAP S/4HANA Cloud system. 
 
-### SAP Cloud Platform
+### SAP Business Technology Platform
 
-1. In your SAP Cloud Platform Cockpit, open your global account and choose
+1. In your SAP Business Technology Platform Cockpit, open your global account and choose
 *Systems*.
 
 2. In the Systems panel, choose *Register System*.
@@ -32,7 +32,7 @@ To be able to do this, in respect to authorizations you must be:
 
  ![Choose Register](./images/setup2.png)
 
-6. The SAP Cloud Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP Cloud Platform from your SAP S/4HANA Cloud system.
+6. The SAP Business Technology Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP Cloud Platform from your SAP S/4HANA Cloud system.
  
 7. Copy the integration token and close the dialog box.
 
