@@ -98,7 +98,7 @@ Whenever a Business Partner is updated in the SAP S/4HANA system, the app receiv
 In order to test whether your setup works:
 
 1. Start the application
-2. Go to your SAP S/4HANA system and update or create a business partner that is located in the US and has the role *FLC01*.
+2. Go to your SAP S/4HANA system and update or create a business partner that is located in the US and has the role *FLCU01*.
 3. Refresh the overview page of your app.
 4. The updated or created BusinessPartner should be listed.
 
