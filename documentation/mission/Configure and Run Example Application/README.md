@@ -9,7 +9,7 @@ adjustments
   
  ![Manifest](./images/run1.png)
   
-  In case you are wondering about the correct service names, you can look then up the SAP Cloud Platform Cockpit.
+  In case you are wondering about the correct service names, you can look then up the SAP Business Technology Platform Cockpit.
   
  ![Services](./images/run2.png)
   
@@ -19,7 +19,7 @@ adjustments
   
 - Enter or adapt the constant for *NAMESPACE*. The namespace of the S/4HANA Cloud system has to be entered. This should be *sap/S4HANAOD/* plus the four character parameter you had picked in an earlier step.
 
-HINT: Check *emClientId* in step 6 of Setup Connectivity and Extensibility --> SAP Cloud Platform Cockpit: Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan “messaging” for enterprise eventing integration if you have doubts in respect to the four character parameter.
+HINT: Check *emClientId* in step 6 of Setup Connectivity and Extensibility --> SAP Business Technology Platform Cockpit: Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan “messaging” for enterprise eventing integration if you have doubts in respect to the four character parameter.
 
 
 
@@ -82,7 +82,7 @@ On top, the following properties of the business partner should be filled as wel
 
 After the creation of the Business Partner a *BusinessPartner.created* event is fired that the app receives. As a payload the event contains the Business Partner ID. In a next step the app calls the appropriate OData service on the S/4HANA Cloud system, to obtain more information on the Business Partner.
 
-Then the app checks if the Business Partner is located in the US and has role *FLC01*. If yes, the app creates an entry in the database. This entry contains the additional information on the Business Partner. All of this happens in the background without the user noticing.
+Then the app checks if the Business Partner is located in the US and has role *FLCU01*. If yes, the app creates an entry in the database. This entry contains the additional information on the Business Partner. All of this happens in the background without the user noticing.
 
 At this point, the application’s user interface needs to be manually refreshed to see the new entry in the list. Clicking on the entry allows to view the details, including technical information and URL of the specific Business Partner in the backend.
 On the details page, there’s an *Edit* button which allows to switch to edit-mode. Fields for which the data retrieved from the backend are read-only. After customer care activities, the user of the app may change the customer status and processing status and these changes are stored in the database. The app automatically stores a draft of changes. After pressing save, the changes are written to the database
