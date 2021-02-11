@@ -110,7 +110,7 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 5. In the *Service Details: SAP S/4HANA Cloud Extensibility* screen area, select your newly registered system name from the dropdown help to list the available service plans. These available service plans are:
 
-- *messaging* to consume SAP S/4HANA Cloud events and create event-based extensions using the event bus from SAP Cloud Platform Enterprise Messaging
+- *messaging* to consume SAP S/4HANA Cloud events and create event-based extensions using the event bus from SAP Event Mesh
 - *api-access* for generic access to SAP S/4HANA Cloud APIs
 
  ![Service Details](./images/setup10.png)
@@ -124,7 +124,7 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 
 
-**Set up your subaccount entitlement for Enterprise Messaging**
+**Set up your subaccount entitlement for SAP Event Mesh**
 
 1. Click on *Configure Entitlements* and then on *Add Service Plan*
 
@@ -366,11 +366,11 @@ https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa071
 
 10. Click Save.
 
-# Create Enterprise Messaging Instance
+# Create Event Mesh Instance
 
 **SAP Business Technology Platform:** Create a new service instance for SAP Enterprise Messaging
 
-When you create a new service instance for Enterprise Messaging, you create a new messaging client, which then receives events sent from your registered SAP S/4HANA Cloud system. The parameters you enter in the JSON file are the service descriptors that are later visible on the Messaging Client UI and dictate the rules to be used for creating queues and their subscriptions.
+When you create a new service instance for SAP Event Mesh, you create a new messaging client, which then receives events sent from your registered SAP S/4HANA Cloud system. The parameters you enter in the JSON file are the service descriptors that are later visible on the Messaging Client UI and dictate the rules to be used for creating queues and their subscriptions.
 
 1. Go to the SAP Business Technology Platform Cockpit.
 
@@ -438,11 +438,11 @@ In case of it being unclear what namespace to use you can look it up in the SAP 
 ![Instance CP Cockpit](./images/setup31.png)
 
 
-# Enable Enterprise Messaging Cockpit (Optional)
+# Enable Event Mesh Cockpit (Optional)
 
-In case that you would like to access the Enterprise Messaging Cockpit, you need to subscribe to SAP Enterprise Messaging and assign a number of roles to your user.
+In case that you would like to access the Event Mesh Cockpit, you need to subscribe to SAP Enterprise Messaging and assign a number of roles to your user.
 
-Hint: There is no need to access the SAP Enterprise Messaging Cockpit in this scenario, it would allow for a better understanding though.
+Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it would allow for a better understanding though.
 
 1. Subscribe to Enterprise Messaging
 
@@ -491,7 +491,7 @@ Repeat this for every user that needs to have access.
 ![Confirm](./images/setup35.png)
 
 
-11. Go to the Enterprise Messaging Administration and confirm it works
+11. Go to the Event Mesh Administration and confirm it works
 
 
 
