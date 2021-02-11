@@ -5,14 +5,14 @@
 
 ## Description
 
-Extend SAP S/4HANA Cloud on the SAP Business Technology Platform using state of the art methodologies and technologies. Put an event-driven architecture into action and use the Cloud Application Programming Model (CAP) building on S/4 events and SAP Enterprise Messaging as event broker.
+Extend SAP S/4HANA Cloud on the SAP Business Technology Platform using state of the art methodologies and technologies. Put an event-driven architecture into action and use the Cloud Application Programming Model (CAP) building on S/4 events and SAP Event Mesh as event broker.
 
 The main intent of this scenario is to complement an existing business process in an SAP solution, i.e. enhancing SAP S/4HANA Cloud with additional business process steps. This involves adding major logic and/or additional data and goes beyond simple UI changes. 
 
 This scenario showcases:
 
 - Building a side-by-side extension to SAP S/4HANA Cloud
-- Setting up Eventing and consuming events from SAP S/4HANA Cloud via [SAP Enterprise Messaging](https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/df532e8735eb4322b00bfc7e42f84e8d.html)
+- Setting up Eventing and consuming events from SAP S/4HANA Cloud via [SAP Event Mesh](https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/df532e8735eb4322b00bfc7e42f84e8d.html)
 - Consuming data via API calls from SAP S/4HANA Cloud 
 - Developing an application on SAP Business Technology Platform using the [SAP Cloud Application Programming Model(CAP)](https://cap.cloud.sap/docs/)
 - Implementing a SAP Fiori Elements UI
@@ -41,7 +41,7 @@ In specific focus regions, we would like to follow up with newly created custome
 
 ![solution diagram](./documentation/images/solutiondiagram.png)
 
-The extension application is developed using the SAP Cloud Application programming Model (CAP) and runs on the SAP Business Technology Platform. It consumes platform services like SAP Enterprise Messaging and the Connectivity Services. The events generated in SAP S/4HANA Cloud are inserted into an SAP Enterprise messaging queue created by CAP. The application consumes these events and inserts relevant business partners into the local database. The extensions application uses SAP S/4HANA APIs to read Business Partner data from the SAP S/4HANA Cloud system. 
+The extension application is developed using the SAP Cloud Application programming Model (CAP) and runs on the SAP Business Technology Platform. It consumes platform services like SAP Event Mesh and the Connectivity Services. The events generated in SAP S/4HANA Cloud are inserted into an SAP Event Mesh queue created by CAP. The application consumes these events and inserts relevant business partners into the local database. The extensions application uses SAP S/4HANA APIs to read Business Partner data from the SAP S/4HANA Cloud system. 
 
 ## Requirements
 * SAP S/4HANA Cloud system (release 1905 or newer)
@@ -84,4 +84,4 @@ No known issues.
 In case you find a bug, or you need additional support, please [open an issue](https://github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process/issues/new) here in GitHub.
 
 ## License
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+Copyright (c) 2021 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
