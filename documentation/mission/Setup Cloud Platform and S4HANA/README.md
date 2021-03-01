@@ -182,11 +182,11 @@ To allow SAP Business Technology Platform applications to consume events and API
  ![Marketplace](./images/setup15.png)
 
 
-3. Click on *Create Instance*.
+3. Click on *Create*.
 
  ![Instance](./images/setup16.png)
 
-4. In the Create Instance wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance (e.g. *georelmessaging*).
+4. In the Create wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance (e.g. *georelmessaging*).
 
  ![Plan](./images/setup17.png)
  
@@ -221,9 +221,9 @@ been prefilled for you.
 
 2. Go to the Service Marketplace and click on SAP S/4HANA Cloud Extensibility
 
-3. Click on Create Instance.
+3. Click on *Create*.
 
-4. In the *Create Instance wizard* in the Service dropdown list, select the service *SAP S/4HANA Cloud Extensibility*.
+4. In the *Create wizard* in the Service dropdown list, select the service *SAP S/4HANA Cloud Extensibility*.
 
 5. Select the Service Plan *api-access*, which you use for generic access to APIs in your SAP S/4HANA Cloud system.
 
@@ -384,7 +384,7 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
  ![EM Tile](./images/setup29.png)
 
 
-5. Click on *Create Instance*.
+5. Click on *Create*.
 
 6. Select *Enterprise Messaging* from the Service Drop Down
 
@@ -452,10 +452,11 @@ Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it
 
 ![Subscribe to EM](./images/setup32.png)
 
+Hint: You can either click on the tile and select *Create* or select *Create* from the menu of the tile
 
 Note: If you don't see the Enterprise Messaging tile or the Subscription option, get in contact with the administrator of the Global Account
 
-2. Go through the subscription process
+2. Go through the subscription process and select *standard* Subscription from the list
 
 
 ![Click](./images/setup33.png)
@@ -483,15 +484,15 @@ Repeat this for every user that needs to have access.
 
 8. Click on your subaccount
 
-9. Select the *Subscriptions* tab
+9. Select the *Instances and Subscriptions* tab
 
-10. Click on *Go to Application*
+10. Click on the three dots under subscriptions and behind your application
 
+11. Select *Go to Application*
 
 ![Confirm](./images/setup35.png)
 
-
-11. Go to the Event Mesh Administration and confirm it works
+12. . Go to the Event Mesh Administration and confirm it works
 
 
 
