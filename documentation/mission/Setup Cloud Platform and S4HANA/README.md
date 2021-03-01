@@ -440,14 +440,14 @@ In case of it being unclear what namespace to use you can look it up in the SAP 
 
 # Enable Event Mesh Cockpit (Optional)
 
-In case that you would like to access the Event Mesh Cockpit, you need to subscribe to SAP Enterprise Messaging and assign a number of roles to your user.
+In case that you would like to access the Event Mesh Cockpit, you need to subscribe to SAP Event Mesh and assign a number of roles to your user.
 
-Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it would allow for a better understanding though.
+Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it would allow for a better understanding though. Plus that it allows you to explore the event format etc.
 
 1. Subscribe to Enterprise Messaging
 
 - Select *Subaccount*
-- Select *Subscriptions* → *Enterprise Messaging*
+- Select *Service Marketplace* → *Enterprise Messaging*
 
 
 ![Subscribe to EM](./images/setup32.png)
