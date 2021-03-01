@@ -1,13 +1,5 @@
 # Setup Connectivity and Extensibility
 
-## Comment in respect to naming
-
-There is a name change going on in respect to SAP Enterprise Messaging. It is going to be named SAP Event Mesh in the future. 
-
-In the next weeks these changes will show up in the SAP BTP user interface as well. Currently, in a lot of places the UI still shows SAP Enterprise Messaging. We have tried to already use the new name here while still allowing you to execute the how to guide. Therefore, as soon as it gets hands-on we are still using SAP Enterprise Messaging to mirror the SAP BTP Cockpit.
-
-As soon as changes take place in the SAP BTP we will update this how to guide as well. 
-
 ## Register Your SAP S/4HANA Cloud System
 
 To build extension applications for your SAP S/4HANA Cloud system, you need to connect your SAP S/4HANA Cloud system to your SAP Business Technology Platform global account.
