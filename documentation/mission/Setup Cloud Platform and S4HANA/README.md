@@ -492,7 +492,7 @@ Repeat this for every user that needs to have access.
 
 ![Confirm](./images/setup35.png)
 
-12. . Go to the Event Mesh Administration and confirm it works
+12. Go to the Event Mesh Cockpit and confirm it works
 
 
 
