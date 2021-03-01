@@ -15,7 +15,7 @@ The Extensibility services are fully integrated in the SAP Business Technology P
 Following the how-to guides provided, you will:
 
 1. Check on the **prerequisites**
-2. **Register your SAP S/4HANA Cloud backend** (release 1905 or higher) on the SAP Cloud Platform
+2. **Register your SAP S/4HANA Cloud backend** (release 1905 or higher) on the SAP Business Technology Platform
 3. Set up service plan **entitlements** (SAP S/4HANA Cloud Extensibility and SAP Event Mesh) for your newly registered system from your SAP Business Technology Platform subaccount
 4. Create **service instances** of the SAP S/4HANA Cloud Extensibility service 
 5. **Configure events** in your SAP S/4HANA Cloud system to send Business Partner Created and Business Partner Changed events to SAP Enterprise Messaging
