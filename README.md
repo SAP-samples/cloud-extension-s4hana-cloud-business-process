@@ -55,7 +55,7 @@ The extension application is developed using the SAP Cloud Application programmi
 
 ### Entitlements
 
-The application requires below set of SAP Cloud Platform Entitlements/Quota
+The application requires below set of SAP BTP Entitlements/Quota
 
 | Service                           | Plan       | Number of Instances |
 |-----------------------------------|------------|:-------------------:|
