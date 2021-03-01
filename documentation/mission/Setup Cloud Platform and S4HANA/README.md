@@ -444,10 +444,10 @@ In case that you would like to access the Event Mesh Cockpit, you need to subscr
 
 Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it would allow for a better understanding though. Plus that it allows you to explore the event format etc.
 
-1. Subscribe to Enterprise Messaging
+1. Subscribe to Event Mesh
 
 - Select *Subaccount*
-- Select *Service Marketplace* → *Enterprise Messaging*
+- Select *Service Marketplace* → *Enterprise Messaging* → *Create*
 
 
 ![Subscribe to EM](./images/setup32.png)
@@ -455,7 +455,7 @@ Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it
 
 Note: If you don't see the Enterprise Messaging tile or the Subscription option, get in contact with the administrator of the Global Account
 
-2. Click Subscribe
+2. Go through the subscription process
 
 
 ![Click](./images/setup33.png)
