@@ -144,20 +144,20 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 
 
-**Set up your subaccount entitlement for Application Runtime**
+**Set up your subaccount entitlement for Cloud Foundry Runtime**
 
 1. Click on *Configure Entitlements* and then on *Add Service Plan*.
 
-2. In the *Subaccount Entitlements* dialog box, select the service *Application Runtime*
+2. In the *Subaccount Entitlements* dialog box, select the service *Cloud Foundry Runtime*
 
  ![AR](./images/setup13.png)
 
 
-3. In the *Service Details: Enterprise Messaging* screen area, select the following service plan:
+3. In the *Service Details: Cloud Foundry Runtime* screen area, select the following service plan:
 
 - MEMORY
 
-4. Press the *Add 1 Service Plan* button to add this entitlement for the Enterprise Messaging service for your subaccount.
+4. Press the *Add 1 Service Plan* button to add this entitlement for the Cloud Foundry Runtime service for your subaccount.
 
 5. Press *Save*.
 
