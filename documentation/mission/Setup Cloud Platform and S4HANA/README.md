@@ -128,16 +128,16 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 1. Click on *Configure Entitlements* and then on *Add Service Plan*
 
-2. In the *Subaccount Entitlements* dialog box, select the service *Enterprise Messaging*
+2. In the *Subaccount Entitlements* dialog box, select the service *Event Mesh*
 
 
  ![EM Service](./images/setup12.png)
 
 
 
-3. In the *Service Details: Enterprise Messaging screen area*, select the *default* service plan
+3. In the *Service Details: Event Mesh screen area*, select the *default* service plan
 
-4. Press the *Add 1 Service Plan* button to add this entitlement for the Enterprise Messaging service for your subaccount.
+4. Press the *Add 1 Service Plan* button to add this entitlement for the Event Mesh service for your subaccount.
 
 5. Press *Save*.
 
