@@ -358,17 +358,17 @@ https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa071
 
 8. Click Go
 
-9. Select BusinessPartner/*
+9. Select sap/s4/beh/businesspartner/v1/BusinessPartner/*
 
 
  ![Select BP](./images/setup28.png)
 
 
-10. Click Save.
+10. Click *Create*.
 
 # Create Event Mesh Instance
 
-**SAP Business Technology Platform:** Create a new service instance for SAP Enterprise Messaging
+**SAP Business Technology Platform:** Create a new service instance for SAP Event Mesh
 
 When you create a new service instance for SAP Event Mesh, you create a new messaging client, which then receives events sent from your registered SAP S/4HANA Cloud system. The parameters you enter in the JSON file are the service descriptors that are later visible on the Messaging Client UI and dictate the rules to be used for creating queues and their subscriptions.
 
@@ -378,7 +378,7 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
 
 3. In the Navigation area, choose *Services* --> *Service Marketplace*
 
-4. Choose the *Enterprise Messaging* tile.
+4. Choose the *Event Mesh* tile.
 
 
  ![EM Tile](./images/setup29.png)
@@ -386,7 +386,7 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
 
 5. Click on *Create*.
 
-6. Select *Enterprise Messaging* from the Service Drop Down
+6. Select *Event Mesh* from the Service Drop Down
 
 7. Select *default* from the Service Plan Drop Down
 
