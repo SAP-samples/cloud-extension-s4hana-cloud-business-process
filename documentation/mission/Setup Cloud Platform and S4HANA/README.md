@@ -307,7 +307,7 @@ https://help.sap.com/viewer/7b98ddc13f8d4a3ba08a74042a0baa7f/Cloud/en-US/553a4c6
 
 8. Choose Next.
 
-9. Click Create Instance.
+9. Click *Create*.
 
 
 The newly created instance appears in the list of instances in the Instance panel.
