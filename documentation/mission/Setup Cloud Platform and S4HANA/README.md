@@ -430,7 +430,7 @@ Example:
 
 In case of it being unclear what namespace to use you can look it up in the SAP S/4HANA Cloud system. Go to the event channel configuration as described above in the S/4 configuration section and find the relevant topic space there.
 
-11. Click on *Create Instance*.
+11. Click on *Create*.
 
 12. Once the instance has been created you can check on it in the SAP Business Technology Platform Cockpit
 
