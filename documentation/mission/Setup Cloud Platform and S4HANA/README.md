@@ -447,14 +447,14 @@ Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it
 1. Subscribe to Event Mesh
 
 - Select *Subaccount*
-- Select *Service Marketplace* → *Enterprise Messaging* → *Create*
+- Select *Service Marketplace* → *Event Mesh* → *Create*
 
 
 ![Subscribe to EM](./images/setup32.png)
 
 Hint: You can either click on the tile and select *Create* or select *Create* from the menu of the tile
 
-Note: If you don't see the Enterprise Messaging tile or the Subscription option, get in contact with the administrator of the Global Account
+Note: If you don't see the Event Mesh tile or the Subscription option, get in contact with the administrator of the Global Account
 
 2. Go through the subscription process and select *standard* Subscription from the list
 
@@ -462,7 +462,7 @@ Note: If you don't see the Enterprise Messaging tile or the Subscription option,
 ![Click](./images/setup33.png)
 
 
-Once the subscription is completed you'll find additional Role Collections for Enterprise Messaging available in your subaccount.
+Once the subscription is completed you'll find additional Role Collections for Event Mesh available in your subaccount.
  
 3. Assign newly created role collections to your users
 
