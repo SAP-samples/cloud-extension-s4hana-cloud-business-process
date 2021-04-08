@@ -60,8 +60,8 @@ The application requires below set of SAP BTP Entitlements/Quota
 | Service                           | Plan       | Number of Instances |
 |-----------------------------------|------------|:-------------------:|
 | SAP Event Mesh                    | default    |          1          |
-| Application Runtime               |            |          1          |
-| Extension Factory Runtime         |            |          1          |
+| Cloud Foundry Runtime             |            |          1          |
+| SAP S/4HANA Cloud Extensibility   | api-access |          1          |
 
 ## Configuration
 
