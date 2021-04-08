@@ -59,7 +59,7 @@ The application requires below set of SAP BTP Entitlements/Quota
 
 | Service                           | Plan       | Number of Instances |
 |-----------------------------------|------------|:-------------------:|
-| Enterprise Messaging              | default    |          1          |
+| SAP Event Mesh                    | default    |          1          |
 | Application Runtime               |            |          1          |
 | Extension Factory Runtime         |            |          1          |
 
