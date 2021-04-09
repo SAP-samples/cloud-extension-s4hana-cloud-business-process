@@ -35,7 +35,9 @@ Cloud system:
 
     SAP_CORE_BC_COM (Communication Management) 
 
-    SAP_BR_BPC_EXPERT
+    SAP_BR_BPC_EXPERT including catalog SAP_CORE_BC_XBE 
+    
+    BR_BUPA_MASTER_SPECIALIST (BuPa App)
 
 - SAP Business Technology Platform Cloud Foundry global account (trial accounts are not supported)
 - SAP Business Technology Platform subaccount created
