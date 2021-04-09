@@ -33,9 +33,10 @@ Cloud system:
 
     SAP_BR_ADMINISTRATOR (Administrator)
 
-    SAP_BR_BPC_EXPERT (Configuration Expert))
-    
-    including catalogs SAP_CORE_BC_XBE (Enterprise Event Enablement) and SAP_CORE_BC_COM (Communication Management)  
+    SAP_BR_BPC_EXPERT (Configuration Expert) including catalogs 
+        
+        SAP_CORE_BC_XBE (Enterprise Event Enablement) and 
+        SAP_CORE_BC_COM (Communication Management)  
     
     BR_BUPA_MASTER_SPECIALIST (Master Data Specialist - Business Partner Data)
     
