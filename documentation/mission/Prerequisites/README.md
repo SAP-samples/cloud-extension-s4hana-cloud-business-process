@@ -33,11 +33,11 @@ Cloud system:
 
     SAP_BR_ADMINISTRATOR (Administrator)
 
-    SAP_CORE_BC_COM (Communication Management) 
-
-    SAP_BR_BPC_EXPERT including catalog SAP_CORE_BC_XBE 
+    SAP_BR_BPC_EXPERT including catalogs SAP_CORE_BC_XBE (Enterprise Event Enablement) and SAP_CORE_BC_COM (Communication Management)  
     
     BR_BUPA_MASTER_SPECIALIST (BuPa App)
+    
+    BR_EMPLOYEE (Employee)
 
 - SAP Business Technology Platform Cloud Foundry global account (trial accounts are not supported)
 - SAP Business Technology Platform subaccount created
