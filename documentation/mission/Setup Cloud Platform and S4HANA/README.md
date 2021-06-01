@@ -548,14 +548,10 @@ Repeat this for every user that needs to have access.
 
 15. Click Go
 
-16. Select the newly created event channel from the list
+16. Select the newly created event channel (eg: Georel_0092) from the list
 
 
 17. Click Create for your Outbound Topic
-
-
- ![Outbound Topic](./images/setup26.png)
-
 
 18. Click on the Topic selector
 
@@ -568,9 +564,6 @@ Repeat this for every user that needs to have access.
 20. Click Go
 
 21. Select sap/s4/beh/businesspartner/v1/BusinessPartner/*
-
-
- ![Select BP](./images/setup28.png)
 
 
 22. Click *Create*.
