@@ -432,11 +432,18 @@ In case of it being unclear what namespace to use you can look it up in the SAP 
 
 11. Click on *Create*.
 
-12. Once the instance has been created you can check on it in the SAP Business Technology Platform Cockpit
+12. Once the instance has been created you can check on it in the SAP Business Technology Platform Cockpit. Click on the 3 dots and select Create Service Key
 
 
 ![Instance CP Cockpit](./images/setup31.png)
 
+13. Provide a name for the service key
+
+14. Click on create 
+
+15. Click on '1 key' under credentials. 
+
+16. Click on Download to download the service key. 
 
 # Enable Event Mesh Cockpit (Optional)
 
@@ -495,6 +502,78 @@ Repeat this for every user that needs to have access.
 12. Go to the Event Mesh Cockpit and confirm it works
 
 
+
+**SAP S/4HANA Cloud: Setup Communication Arrangement - workaround**
+
+1. Log onto your SAP S/4HANA Cloud system
+
+2. Go to Communication Management
+
+3. Go to Communication Arrangements
+   
+   ![Comm Enablement](./images/setup_temp_1.png)
+   
+4. Click on New
+
+5. Click on the value help for Scenario
+
+6. Search for Enterprise Event Integration and select the same. 
+
+![Comm Enablement](./images/setup_temp_2.png)
+
+7. Click on new to create a communication user.
+
+8. Provide a user name
+
+9. Provide a description
+
+10. Click on Propose Password
+
+11. Click on create
+
+![Comm Enablement](./images/setup_temp_3.png)
+
+12. Paste the content of service key that you have downloaded in Step 16 under Create Event Mesh Instance.
+
+13. Click on create
+
+![Comm Enablement](./images/setup_temp_4.png)
+
+ 
+ 14. Go to Enterprise Event Enablement
+
+
+ ![Event Enablement](./images/setup24.png)
+
+
+15. Click Go
+
+16. Select the newly created event channel from the list
+
+
+17. Click Create for your Outbound Topic
+
+
+ ![Outbound Topic](./images/setup26.png)
+
+
+18. Click on the Topic selector
+
+19. Enter *BusinessPartner* into the Topic Filter
+
+
+ ![Business Partner](./images/setup27.png)
+
+
+20. Click Go
+
+21. Select sap/s4/beh/businesspartner/v1/BusinessPartner/*
+
+
+ ![Select BP](./images/setup28.png)
+
+
+22. Click *Create*.
 
 
 
