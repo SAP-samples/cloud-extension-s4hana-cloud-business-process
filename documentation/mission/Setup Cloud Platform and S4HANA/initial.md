@@ -171,8 +171,49 @@ Your activities should result in a screen like this:
 
 # Create Service Instances of SAP S/4HANA Cloud Extensibility Service with Service Plans
 
-To allow SAP Business Technology Platform applications to consume events and APIs from SAP S/4HANA Cloud, you need to create the relevant service instances of SAP S/4HANA Cloud Extensibility for the service plan *api-access*
+To allow SAP Business Technology Platform applications to consume events and APIs from SAP S/4HANA Cloud, you need to create the relevant service instances of SAP S/4HANA Cloud Extensibility for the service plans *api-access* and *messaging*.
 
+**SAP BTP Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *“messaging”* for enterprise eventing integration
+
+1. Go to your subaccount and then to your space.
+
+2. Go to the Service Marketplace and click on *SAP S/4HANA Cloud Extensibility*
+
+ ![Marketplace](./images/setup15.png)
+
+
+3. Click on *Create*.
+
+ ![Instance](./images/setup16.png)
+
+4. In the Create wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance (e.g. *georelmessaging*).
+
+ ![Plan](./images/setup17.png)
+ 
+5. Click *Next*
+
+6. In the Specify Parameters dialog box, use the following template, which should have
+been prefilled for you.
+
+- The *emClientId* you can freely choose following the conventions - unless it is already in use - and according to the conventions it must contain between 1 and 4 alphanumeric characters (a-z, A-Z, 0-9). Use for example your birthday (e.g. *1908*).
+- Maintain the channel name as you will need this information when you enable events in your SAP S/4HANA Cloud system
+- For more information, check on help.sap.com: https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5722fc4466cb43c1aae9625742185b64.html
+
+
+``` 
+{
+
+"emClientId": "<Add your emClientId here>", 
+  
+"systemName": "<S/4HANA Cloud system name>"
+
+}
+``` 
+
+ ![Parameters](./images/setup20.png)
+
+
+7. Click *Create Instance*. The newly created instance appears in the list of instances in the Instance panel.
 
 **SAP Business Technology Platform Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *api-access* to access the BusinessPartner API and enable its usage
 
@@ -274,6 +315,57 @@ The newly created instance appears in the list of instances in the Instance pane
  ![Instance Appears](./images/setup23.png)
 
 
+# Manage Your Solution for Event Handling in SAP S/4HANA Cloud System
+
+You need to enable the events that are to be sent from your SAP S/4HANA Cloud system to SAP Business Technology Platform. For this enablement step, go to your SAP S/4HANA system.
+
+
+**SAP S/4HANA Cloud: Maintain Event Topics for a Channel**
+
+Find additional information here:
+
+https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa0717c08461ba05ee846caec46b7.html
+
+1. Log onto your SAP S/4HANA Cloud system
+
+2. Go to Enterprise Event Enablement
+
+
+ ![Event Enablement](./images/setup24.png)
+
+
+3. Click Go
+
+4. Select your event channel from the list
+
+
+ ![Event Channel](./images/setup25.png)
+
+
+5. Click Create for your Outbound Topic
+
+
+ ![Outbound Topic](./images/setup26.png)
+
+
+6. Click on the Topic selector
+
+7. Enter *BusinessPartner* into the Topic Filter
+
+
+ ![Business Partner](./images/setup27.png)
+
+
+8. Click Go
+
+9. Select sap/s4/beh/businesspartner/v1/BusinessPartner/*
+
+
+ ![Select BP](./images/setup28.png)
+
+
+10. Click *Create*.
+
 # Create Event Mesh Instance
 
 **SAP Business Technology Platform:** Create a new service instance for SAP Event Mesh
@@ -324,96 +416,26 @@ Example:
 "queueRules": { "publishFilter": [
 "${namespace}/*"
 ], "subscribeFilter": [
-"${namespace}/*"
+"${namespace}/*", "sap/S4HANAOD/1908/*"
 ] },
 "topicRules": { "publishFilter": [
 "${namespace}/*"
 ], "subscribeFilter": [
-"${namespace}/*"
+"${namespace}/*", "sap/S4HANAOD/1908/*"
 ] }
 
 } 
 }
 ```
 
+In case of it being unclear what namespace to use you can look it up in the SAP S/4HANA Cloud system. Go to the event channel configuration as described above in the S/4 configuration section and find the relevant topic space there.
+
 11. Click on *Create*.
 
-12. Once the instance has been created you can check on it in the SAP Business Technology Platform Cockpit. Click on the 3 dots and select Create Service Key
+12. Once the instance has been created you can check on it in the SAP Business Technology Platform Cockpit
+
 
 ![Instance CP Cockpit](./images/setup31.png)
-
-13. Provide a name for the service key
-
-14. Click on create 
-
-15. Click on '1 key' under credentials for the newly created Event Mesh instance. 
-
-16. Click on Download to download the service key. 
-
-
-**SAP S/4HANA Cloud: Setup Communication Arrangement **
-
-1. Log onto your SAP S/4HANA Cloud system
-
-2. Go to Communication Management
-
-3. Go to Communication Arrangements
-   
-   ![Comm Enablement](./images/setup_temp_1.png)
-   
-4. Click on New
-
-5. Click on the value help for Scenario
-
-6. Search for Enterprise Event Integration and select the same. 
-
-![Comm Enablement](./images/setup_temp_2.png)
-
-7. Click on new to create a communication user.
-
-8. Provide a user name
-
-9. Provide a description
-
-10. Click on Propose Password
-
-11. Click on create
-
-![Comm Enablement](./images/setup_temp_3.png)
-
-12. Paste the content of service key that you have downloaded in Step 16 under Create Event Mesh Instance.
-
-13. Click on create
-
-![Comm Enablement](./images/setup_temp_4.png)
-
-** Manage Your Solution for Event Handling in SAP S/4HANA Cloud System **
- 
-1. Go to Enterprise Event Enablement
-
-
- ![Event Enablement](./images/setup24.png)
-
-
-2. Click Go
-
-3. Select the newly created event channel (eg: Georel_0092) from the list
-
-4. Click Create for your Outbound Topic
-
-5. Click on the Topic selector
-
-6. Enter *BusinessPartner* into the Topic Filter
-
-
- ![Business Partner](./images/setup27.png)
-
-
-7. Click Go
-
-8. Select sap/s4/beh/businesspartner/v1/BusinessPartner/*
-
-9. Click *Create*.
 
 
 # Enable Event Mesh Cockpit (Optional)
@@ -471,4 +493,31 @@ Repeat this for every user that needs to have access.
 ![Confirm](./images/setup35.png)
 
 12. Go to the Event Mesh Cockpit and confirm it works
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
