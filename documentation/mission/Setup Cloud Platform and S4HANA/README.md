@@ -351,7 +351,7 @@ Example:
 16. Click on Download to download the service key. 
 
 
-**SAP S/4HANA Cloud: Setup Communication Arrangement **
+**SAP S/4HANA Cloud: Setup Communication Arrangement**
 
 1. Log onto your SAP S/4HANA Cloud system
 
