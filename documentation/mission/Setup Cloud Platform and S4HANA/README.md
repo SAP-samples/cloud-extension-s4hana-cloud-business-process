@@ -42,7 +42,7 @@ To be able to do this, in respect to authorizations you must be:
 
 1. Log onto your SAP S/4HANA Cloud tenant.
 
-2. Navigate to *Home -> Communication Management* tab and choose the tile *Maintain SAP Cloud Platform Extensions*.
+2. Navigate to *Home -> Communication Management* tab and choose the tile *Maintain Extensions on SAP BTP*.
 
  ![Maintain](./images/setup4.png)
 
