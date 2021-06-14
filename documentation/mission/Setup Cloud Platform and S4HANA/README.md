@@ -175,7 +175,7 @@ To allow SAP Business Technology Platform applications to consume events and API
 
 **SAP BTP Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *“messaging”* for enterprise eventing integration
 
-1. Go to your subaccount and then to your space.
+1. Go to your subaccount.
 
 2. Go to the Service Marketplace and click on *SAP S/4HANA Cloud Extensibility*
 
