@@ -350,7 +350,7 @@ https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa071
 
 6. Click on the Topic selector
 
-7. Enter '*BusinessPartner*' into the Topic Filter
+7. Enter asteriks BusinessPartner asteriks into the Topic Filter
 
 
  ![Business Partner](./images/setup27.png)
