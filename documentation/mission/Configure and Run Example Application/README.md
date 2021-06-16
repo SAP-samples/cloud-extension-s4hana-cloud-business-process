@@ -35,7 +35,7 @@ To deploy the application perform the following steps:
 2. Login to the account and space:
 
 ```
-cf login
+cf login -sso
 ```
 
 2. Login to the account and space with *cf login*.
@@ -44,7 +44,7 @@ cf login
 5. Execute the following command: 
 
 ```
-cf push
+cf push -random-route
 ```
 
 6. Check the console for the final output and that the deployment has worked out.
