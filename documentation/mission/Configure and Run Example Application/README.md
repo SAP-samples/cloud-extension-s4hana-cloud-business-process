@@ -37,6 +37,11 @@ To deploy the application perform the following steps:
 ```
 cf login -sso
 ```
+or alternatively
+
+```
+cf login
+```
 
 2. Login to the account and space with *cf login*.
 3. Navigate to the folder >installation folder</
