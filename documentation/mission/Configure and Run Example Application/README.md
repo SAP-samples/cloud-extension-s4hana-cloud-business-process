@@ -4,8 +4,8 @@ With the app coding ready on your device, you now need to perform a few steps to
   
 In detail you have to adapt the *manifest.yaml* , the *package.json* and the *service.js* files.
 
-1. Find the *manifest.yaml* in your installation folder , open it and perform these
-adjustments
+1. Find the *manifest.yaml* in your installation folder , open it and perform the below
+adjustments, if at all needed. Adjustments are only needed if you have adjusted the services names during the earlier steps or plan for using an app name without the random route option with the push command later on.
   
  ![Manifest](./images/run1.png)
   
