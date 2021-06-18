@@ -196,7 +196,6 @@ To allow SAP Business Technology Platform applications to consume events and API
 been prefilled for you.
 
 - The *emClientId* you can freely choose following the conventions - unless it is already in use - and according to the conventions it must contain between 1 and 4 alphanumeric characters (a-z, A-Z, 0-9). Use for example your birthday (e.g. *1908*).
-- Maintain the channel name as you will need this information when you enable events in your SAP S/4HANA Cloud system
 - For more information, check on help.sap.com: https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5722fc4466cb43c1aae9625742185b64.html
 
 
