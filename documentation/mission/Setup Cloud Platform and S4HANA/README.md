@@ -405,6 +405,8 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
 - Line 3: emname
 - Line 11 and 16: namespace
 
+Hint: for the namespace you will most likely just have to exchange the 4 digit number to the number of your choice that you had entered for the emClientId in an earlier step. So you would have to replace 1908 in the example below with the 4 characters you chose for the emClientId. 
+
 Example:
 
 ```
