@@ -340,6 +340,8 @@ https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa071
 
 4. Select your event channel from the list
 
+Hint: Look for your emClientId that you had provided in an earlier step. 
+
 
  ![Event Channel](./images/setup25.png)
 
