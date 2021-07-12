@@ -2,7 +2,7 @@
 
 With the app coding ready on your device, you now need to perform a few steps to adjust the app to your own environment.
   
-In detail you have to adapt the *manifest.yaml* , the *package.json* and the *service.js* files.
+In detail you have to adapt the *manifest.yaml* and the *service.js* files.
 
 1. Find the *manifest.yaml* in your installation folder , open it and perform the below
 adjustments, if at all needed. Adjustments are only needed if you have adjusted the services names during the earlier steps or plan for using an app name without the random route option with the push command later on.
