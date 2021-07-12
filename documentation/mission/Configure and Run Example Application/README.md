@@ -49,7 +49,7 @@ cf login
 5. Execute the following command: 
 
 ```
-cf push -random-route
+cf push --random-route
 ```
 
 6. Check the console for the final output and that the deployment has worked out.
