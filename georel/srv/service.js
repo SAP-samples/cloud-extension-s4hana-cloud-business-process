@@ -2,9 +2,9 @@
 
 cds = require('@sap/cds')
 
-const uuidv4 = require('uuid/v4');
-const { BusinessPartner, BusinessPartnerRole, BusinessPartnerAddress, AddressPhoneNumber, AddressEmailAddress }
-    = require('@sap/cloud-sdk-vdm-business-partner-service')
+//const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
+const { BusinessPartner, BusinessPartnerRole, BusinessPartnerAddress, AddressPhoneNumber, AddressEmailAddress } = require('@sap/cloud-sdk-vdm-business-partner-service')
 
 const RELEVANT_COUNTRY = process.env.RELEVANT_COUNTRY || 'US'
 const RELEVANT_ROLE = 'FLCU01'
@@ -24,12 +24,13 @@ const STATUS = {
     CLOSED: 5
 }
 
-module.exports = cds.service.impl((srv) => {
+module.exports = cds.service.impl(async(srv) => {
+    const messaging = await cds.connect.to('messaging');
 
     const { CustomerProcesses } = cds.entities
 
-    srv.on(TOPIC_CREATED, async (msg) => {
-        
+    messaging.on(TOPIC_CREATED, async(msg) => {
+
         let bupaId = msg.data.BusinessPartner;
 
         console.log('==> [MSG] handler: received S4 Event: BuPa Created (Relevant country: ' + RELEVANT_COUNTRY + ')' + ' ID: ' + bupaId)
@@ -38,7 +39,7 @@ module.exports = cds.service.impl((srv) => {
         const result = await _callS4H(bupaId)
         console.log('    Successfully back from S4 system: ' + JSON.stringify(result));
 
-        if (! await _bupaExists(bupaId, CustomerProcesses)) {
+        if (!await _bupaExists(bupaId, CustomerProcesses)) {
             // we only consider customers from our region
             if (_isRelevant(result.bupa)) {
                 // write to database
@@ -53,14 +54,14 @@ module.exports = cds.service.impl((srv) => {
 
     })
 
-    srv.on(TOPIC_CHANGED, async (msg) => {
-        
-    //let bupaId = msg.data.KEY[0].BUSINESSPARTNER
+    messaging.on(TOPIC_CHANGED, async(msg) => {
+
+        //let bupaId = msg.data.KEY[0].BUSINESSPARTNER
 
         let bupaId = msg.data.BusinessPartner;
-        
+
         console.log('==> [MSG] handler: received S4 Event: BuPa Changed' + ' ID: ' + bupaId);
-    
+
         // call S4H system using SAP CLoud SDK
         const result = await _callS4H(bupaId)
         console.log('    [MSG] handler: Successfully called S4 API: ' + JSON.stringify(result));
@@ -102,7 +103,7 @@ module.exports = cds.service.impl((srv) => {
 })
 
 /** Calls the S4Hana Backend system with the given business partner id, to read the details */
-const _callS4H = async function (bupaId) {
+const _callS4H = async function(bupaId) {
     return new Promise((resolve, reject) => {
         BusinessPartner.requestBuilder()
             .getByKey(bupaId)
@@ -154,8 +155,8 @@ function _isRelevant(bupa) {
     if (!bupa.toBusinessPartnerRole[0] || bupa.toBusinessPartnerRole[0].length < 1) {
         return false
     }
-    if (bupa.toBusinessPartnerRole[0].businessPartnerRole === RELEVANT_ROLE
-        && _checkCountry(bupa, RELEVANT_COUNTRY)) {
+    if (bupa.toBusinessPartnerRole[0].businessPartnerRole === RELEVANT_ROLE &&
+        _checkCountry(bupa, RELEVANT_COUNTRY)) {
         return true;
     }
     return false
@@ -202,7 +203,7 @@ function _composeDbEntry(result, event, existingEntry) {
 
     if (!existingEntry) {
         //remove uuid
-        dbEntry.processId = uuidv4()  // in case of creation
+        dbEntry.processId = uuidv4() // in case of creation
         dbEntry.customerCondition_conditionId = 1 // new
     }
 
@@ -234,13 +235,13 @@ function _extractAddressInfo(bupa) {
 function _computeCriticality(status) {
     switch (status) {
         case STATUS.KICK_OFF:
-            return 0;   // grey
+            return 0; // grey
         case STATUS.OK:
-            return 3;   // green
+            return 3; // green
         case STATUS.FOLLOW_UP:
-            return 2;   // yellow
+            return 2; // yellow
         case STATUS.CRITICAL:
-            return 1;   // red
+            return 1; // red
         case STATUS.CLOSED:
             return 0;
         default:
