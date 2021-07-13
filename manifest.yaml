@@ -1,10 +1,8 @@
 ---
 applications:
 - name: geo
-  #host: geo
   path: georel
   memory: 128M
-  #buildpack: nodejs_buildpack
   env:
     RELEVANT_COUNTRY: 'US'
   services:
