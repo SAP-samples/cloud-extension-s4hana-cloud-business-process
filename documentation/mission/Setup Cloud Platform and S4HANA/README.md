@@ -213,7 +213,7 @@ been prefilled for you.
  ![Parameters](./images/setup20.png)
 
 
-7. Click *Create Instance*. The newly created instance appears in the list of instances in the Instance panel.
+7. Click *Create*. The newly created instance appears in the list of instances in the Instance panel.
 
 **SAP Business Technology Platform Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *api-access* to access the BusinessPartner API and enable its usage
 
