@@ -46,7 +46,7 @@ To be able to do this, in respect to authorizations you must be:
 
  ![Maintain](./images/setup4.png)
 
-3. On the *Maintain SAP Cloud Platform Extensions* screen in the Integration section, choose *New*.
+3. On the *Maintain Extensions* screen in the Integration section, choose *New*.
 
  ![New](./images/setup5.png)
 
