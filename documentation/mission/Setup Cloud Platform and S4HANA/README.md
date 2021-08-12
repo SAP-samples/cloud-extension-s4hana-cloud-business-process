@@ -321,7 +321,7 @@ The newly created instance appears in the list of instances in the Instance pane
 You need to enable the events that are to be sent from your SAP S/4HANA Cloud system to SAP Business Technology Platform. For this enablement step, go to your SAP S/4HANA system.
 
 
-**SAP S/4HANA Cloud: Maintain Event Topics for a Channel**
+**SAP S/4HANA Cloud: Maintain Event Topics in the Enterprise Event Enablement app**
 
 Find additional information here:
 
