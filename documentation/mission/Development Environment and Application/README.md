@@ -24,12 +24,14 @@ Either clone the code from GitHub or download and extract the ZIP file provided 
   
 Navigate into the folder in which the package.json is located, which should be >your installation folder</georel
 
-Run the two commands below:
+Run the three commands below:
 
 ```
 npm install
 
 npm install sqlite3 -D
+
+cds deploy --to sqlite
 ```
 
 Hint: In case of issues/errors, please make sure that your node installation is up to date. Specifically in case of issues installing sqlite3 on a Mac you could try: 
