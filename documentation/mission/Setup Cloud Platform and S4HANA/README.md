@@ -217,7 +217,7 @@ been prefilled for you.
 
 **SAP Business Technology Platform Cockpit:** Create a new service instance of SAP S/4HANA Cloud Extensibility with service plan *api-access* to access the BusinessPartner API and enable its usage
 
-1. Go to your subaccount and then to your space.
+1. Go to your subaccount.
 
 2. Go to the Service Marketplace and click on SAP S/4HANA Cloud Extensibility
 
@@ -377,7 +377,7 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
 
 1. Go to the SAP Business Technology Platform Cockpit.
 
-2. Open your subaccount and then your space (in which you want to create the service instance).
+2. Open your subaccount.
 
 3. In the Navigation area, choose *Services* --> *Service Marketplace*
 
