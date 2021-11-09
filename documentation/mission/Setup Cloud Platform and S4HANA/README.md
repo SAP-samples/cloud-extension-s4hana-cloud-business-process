@@ -91,12 +91,12 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 ### SAP Business Technology Platform
 
-1. In your SAP Business Technology Platform Cockpit, open your global account and choose *Entitlements --> Subaccount Assignments*.
+1. In your SAP Business Technology Platform Cockpit, open your global account and choose *Entitlements --> Entity Assignments*.
 
  ![CP Cockpit](./images/setup7.png)
 
 
-2. In the Subaccounts dropdown list, select your subaccount and choose *Ok*.
+2. n the Select Entities dropdown list, type or select your subaccount, choose select and then GO.
  
 3. Choose *Configure Entitlements* and then *Add Service Plans*.
 
@@ -459,7 +459,7 @@ Hint: There is no need to access the SAP Event Mesh Cockpit in this scenario, it
 
 Hint: You can either click on the tile and select *Create* or select *Create* from the menu of the tile
 
-Note: If you don't see the Event Mesh tile or the Subscription option, get in contact with the administrator of the Global Account
+Note: If you don't see the Event Mesh tile or the Subscription option, get in contact with the administrator of the Global Account or check whether the plan standard has been assigned to the entitlement of event mesh standard plan has been assigned or not.
 
 2. Go through the subscription process and select *standard* Subscription from the list
 
