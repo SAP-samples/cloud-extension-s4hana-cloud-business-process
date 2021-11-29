@@ -96,7 +96,7 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
  ![CP Cockpit](./images/setup7.png)
 
 
-2. n the Select Entities dropdown list, type or select your subaccount, choose select and then GO.
+2. In the Select Entities dropdown list, type or select your subaccount, choose select and then GO.
  
 3. Choose *Configure Entitlements* and then *Add Service Plans*.
 
