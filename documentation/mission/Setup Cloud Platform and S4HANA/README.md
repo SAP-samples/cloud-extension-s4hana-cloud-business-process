@@ -472,32 +472,30 @@ Once the subscription is completed you'll find additional Role Collections for E
 3. Assign newly created role collections to your users
 
 - Select *Subaccount*
-- Select *Security* → *Trust Configuration*
-- Click on your identity provider (e.g. SAP ID Service)
+- Select *Security* → *Role Collections*
+- Click on the right arrow button in the "Enterprise Messaging Developer":
  
-4. Provide email address of user to access eventing UIs
-  
-5. Click *Show Assignments*
+![Role Collection](./images/setup37.png) 
 
-6. Click *Assign Role Collection*
+4. Click on Edit
 
-7. Select the Role Collection called *Enterprise Messaging Developer* from the drop-down and click *Assign Role Collection*
+![Role Collection](./images/setup38.png) 
 
-![Role Collection](./images/setup34.png)
+5. Go to users tab and enter the email of the user and click on **+** sign.
 
-Repeat this for every user that needs to have access.
+Repeat this for every user that needs to have access, then click **Save** button.
 
-8. Click on your subaccount
+6. Click on your subaccount
 
-9. Select the *Instances and Subscriptions* tab
+7. Select the *Instances and Subscriptions* tab
 
-10. Click on the three dots under subscriptions and behind your application
+8. Click on the three dots under subscriptions and behind your application
 
-11. Select *Go to Application*
+9. Select *Go to Application*
 
 ![Confirm](./images/setup35.png)
 
-12. Go to the Event Mesh Cockpit and confirm it works
+10. Go to the Event Mesh Cockpit and confirm it works
 
 
 
