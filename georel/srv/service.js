@@ -9,7 +9,7 @@ const { BusinessPartner, BusinessPartnerRole, BusinessPartnerAddress, AddressPho
 const RELEVANT_COUNTRY = process.env.RELEVANT_COUNTRY || 'US'
 const RELEVANT_ROLE = 'FLCU01'
 
-const NAMESPACE = 'sap/S4HANAOD/1908'
+const NAMESPACE = 'sap/S4HANAOD/0422'
 const CREATED = 'ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1'
 const CHANGED = 'ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Changed/v1'
 
