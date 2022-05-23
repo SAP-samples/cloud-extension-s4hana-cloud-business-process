@@ -10,14 +10,6 @@ From a technology perspective, the application is written in javascript and runn
 
  ![app](./images/devandapp1.png)
 
-**Preparation**
-
-Add the SAP NPM Registry to your npm configuration for all @sap scoped modules.
-
-```
-npm config set @sap:registry https://npm.sap.com
-```
-
 **Installation**
 
 Either clone the code from GitHub or download and extract the ZIP file provided to your local file system >your installation folder<.
