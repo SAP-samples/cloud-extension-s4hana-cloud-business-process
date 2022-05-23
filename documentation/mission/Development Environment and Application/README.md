@@ -21,7 +21,7 @@ Run the three commands below:
 ```
 npm install
 
-npm install sqlite3 -D
+npm install sqlite3
 
 cds deploy --to sqlite
 ```
