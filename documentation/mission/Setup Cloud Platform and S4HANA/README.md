@@ -15,7 +15,7 @@ To be able to do this, in respect to authorizations you must be:
 1. In your SAP Business Technology Platform Cockpit, open your global account and choose
 *Systems*.
 
-2. In the Systems panel, choose *Register System*.
+2. In the Systems Landscape, choose *Add System*.
 
 
  ![Register System](./images/setup1.png)
@@ -28,12 +28,14 @@ To be able to do this, in respect to authorizations you must be:
 
 4. In the Type dropdown list, choose *SAP S/4HANA Cloud*.
 
-5. Choose *Register*.
+5. Choose *Add*.
 
- ![Choose Register](./images/setup2.png)
+ ![Choose Add](./images/setup2.png)
 
-6. The SAP Business Technology Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP Cloud Platform from your SAP S/4HANA Cloud system.
- 
+6. The SAP Business Technology Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP Cloud Platform from your SAP S/4HANA Cloud system.  sClick on *Get Token* 
+
+ ![Get Token](./images/setup3.2.png)
+
 7. Copy the integration token and close the dialog box.
 
  ![Token](./images/setup3.png)
