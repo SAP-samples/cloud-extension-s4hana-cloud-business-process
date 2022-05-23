@@ -15,6 +15,7 @@
         "@sap/xsenv": "latest",
         "express": "^4.17.1",
         "passport": "^0.5.2",
+        "uuid": "^8.3.2",        
         "sqlite3": "^5.0.4"
     },
     "scripts": {
