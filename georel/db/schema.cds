@@ -4,8 +4,8 @@ using { sap.common.CodeList } from '@sap/cds/common';
 
     entity CustomerProcesses {
         key processId : UUID;
-        customerName : String;
-        customerId : String;
+        customerName : String(40);
+        customerId : String(10);
         customerPhone : String;
         customerLanguage : String;
         customerCountry: String;
