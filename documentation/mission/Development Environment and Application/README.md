@@ -12,7 +12,7 @@ From a technology perspective, the application is written in javascript and runn
 
 **Installation**
 
-Either clone the code from GitHub or download and extract the ZIP file provided to your local file system >your installation folder<.
+Either [clone the code from GitHub](https://github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process) or download and extract the ZIP file provided to your local file system >your installation folder<.
   
 Navigate into the folder in which the package.json is located, which should be >your installation folder</georel
 
