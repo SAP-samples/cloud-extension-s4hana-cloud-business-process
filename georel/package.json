@@ -1,42 +1,46 @@
 {
-    "name": "georelations",
-    "description": "Application for Customer GeoRelation Processing",
-    "repository": "<Add your repository here>",
-    "license": "ISC",
-    "version": "1.0.0",
-    "engines": {
-        "node": "^16"
-    },
-    "files": [],
-    "dependencies": {
-        "@sap/cds": "5.9.2",
-        "@sap/cloud-sdk-vdm-business-partner-service": "1.26.0",
-        "@sap/xb-msg-amqp-v100": "latest",
-        "@sap/xsenv": "latest",
-        "express": "^4.17.1",
-        "passport": "^0.5.2",
-        "uuid": "^8.3.2",        
-        "sqlite3": "^5.0.4"
-    },
-    "scripts": {
-        "start": "cds run",
-        "build": "cds build/all --clean",
-        "deploy": "cds deploy"
-    },
-    "cds": {
-        "requires": {
-            "auth": {
-                "kind": "dummy-auth"
-            },
-            "db": {
-                "kind": "sqlite",
-                "model": "*"
-            },
-            "messaging": {
-                "[production]": {
-                    "kind": "enterprise-messaging-shared"
-                }
-            }
+  "name": "georelations",
+  "description": "Application for Customer GeoRelation Processing",
+  "repository": "<Add your repository here>",
+  "license": "ISC",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^16"
+  },
+  "files": [],
+  "dependencies": {
+    "@sap-cloud-sdk/http-client": "^2.6.0",
+    "@sap-cloud-sdk/util": "^2.6.0",
+    "@sap/cds": "^6",
+    "@sap/cloud-sdk-vdm-business-partner-service": "1.26.0",
+    "@sap/xb-msg-amqp-v100": "latest",
+    "@sap/xsenv": "latest",
+    "express": "^4.17.1",
+    "passport": "^0.6.0",
+    "sqlite3": "^5.1.2",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "cds run",
+    "build": "cds build/all --clean",
+    "deploy": "cds deploy"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "dummy-auth"
+      },
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "sqlite.db"
         }
+      },
+      "messaging": {
+        "[production]": {
+          "kind": "enterprise-messaging-shared"
+        }
+      }
     }
+  }
 }
