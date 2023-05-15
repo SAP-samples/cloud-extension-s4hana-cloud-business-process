@@ -74,7 +74,13 @@ Note: The app might come with initial content. You should see the database prelo
 
 ## 1st scenario - Creation of a Business Partner in the SAP S/4HANA Cloud Backend
 
-A new Business Partner is created in the SAP S/4HANA system. For it to be shown in the app, the Business Partner must be located in the US and have role *FLCU01* assigned.
+A new Business Partner is to be created in the SAP S/4HANA system by following below steps:
+
+- Navigate to Business Partner Master
+- Select Manage business partner Master Data
+- Click on Create
+
+For it to be shown in the app, the Business Partner must be located in the US and have role *FLCU01* assigned.
 
 On top, the following properties of the business partner should be filled as well:
 
