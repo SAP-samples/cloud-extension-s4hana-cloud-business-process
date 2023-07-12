@@ -12,25 +12,52 @@ From a technology perspective, the application is written in javascript and runn
 
 **Installation**
 
-Either [clone the code from GitHub](https://github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process) or download and extract the ZIP file provided to your local file system >your installation folder<.
-  
-Navigate into the folder in which the package.json is located, which should be >your installation folder</georel
+1. First you need to open SAP Buisess Application Studio. 
 
-Run the three commands below:
+2. Then choose **Create Dev Space**
+
+ ![app](./images/bas1.png)
+
+3. Give a Dev Space name e.g. GeoRel_YourUserNumber and choose **Full Stack Cloud Application** Then choose **Create Dev Space**
+
+ ![app](./images/bas2.png)
+
+4. Then you need to clone the provided code form GitHub. Choose **Clone from Git** and enter the link to the repo: https://github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process
+
+ ![app](./images/bas3.png)
+
+5. You can log into Cloud Foundry using the command pallette option. Choose **View** &rarr; **Command Palette**. In the entry section search and choose **Login to Cloud Foundry**
+
+ ![app](./images/bas4.png)
+ ![app](./images/bas5.png)
+
+6. Specify the information for your cf environment. Enter your **API Endpoint** and choose authentication method **SSO Passcode**. Open the browser page to get your token and copy the generated toked to the field. Choose **Sign in**
+
+ ![app](./images/bas6.png)
+
+7. Select the **Cloud Foundry Target** and select **Space**. Choose **Apply** 
+
+ ![app](./images/bas6.png)
+
+
+8. Open the Terminal. Choose **Terminal** &rarr; **New Terminal**
+
+  
+9. In Terminal cavigate into the folder in which the package.json is located, which should be YourInstallationFolder/georel.  You can do this by running the command
 
 ```
+cd georel
+```
+
+
+10. Run the three commands below:
+
+```
+
 npm install
 
 npm install sqlite3
 
 cds deploy --to sqlite
-```
-
-Hint: In case of issues/errors, please make sure that your node installation is up to date. Specifically in case of issues installing sqlite3 on a Mac you could try: 
 
 ```
-npm install -g npm@latest 
-
-npm install sqlite3 -g npm@latest
-```
-
