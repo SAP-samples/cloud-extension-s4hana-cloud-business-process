@@ -12,7 +12,9 @@ From a technology perspective, the application is written in javascript and runn
 
 **Installation**
 
-1. First you need to open SAP Buisess Application Studio. 
+1. First you need to open SAP Buisess Application Studio. In Subaccount go to **Services** &rarr; **Instances and Subscriptions** and choose **SAP Business Application Studio** to open
+
+ ![app](./images/bas01.png)
 
 2. Then choose **Create Dev Space**
 
