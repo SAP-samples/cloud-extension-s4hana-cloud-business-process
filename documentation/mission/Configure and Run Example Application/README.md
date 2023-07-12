@@ -16,7 +16,7 @@ adjustments, if at all needed. Adjustments are only needed if you have adjusted 
  ![Services](./images/run2.png)
   
 2. In a next step go to >installation folder< /georel/srv and open the file service.js with the editor of your choice.
-  
+ ![service file](./images/run3.1.png)   
  ![service file](./images/run3.png)  
   
 - Enter or adapt the constant for *NAMESPACE*. The namespace of the S/4HANA Cloud system has to be entered. This should be *sap/S4HANAOD/* plus the four character parameter you had picked in an earlier step.
