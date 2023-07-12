@@ -12,6 +12,9 @@ To be able to do this, in respect to authorizations you must be:
 
 ### SAP Business Technology Platform
 
+> **Note**
+> This step has been performed centrally, no action from participants required.
+
 1. In your SAP Business Technology Platform Cockpit, open your global account and choose
 *Systems*.
 
