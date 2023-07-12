@@ -30,44 +30,32 @@ HINT: Check *emClientId* in step 6 of Setup Connectivity and Extensibility --> S
 
 # Deployment
 
-We are going to use the cloud foundry command line client for the deployment. In case you have not installed it yet, follow the steps described in this blog:
-
-https://blogs.sap.com/2019/06/11/sap-cloud-platform-backend-service-tutorial-23-using-command-line-for-cloud/
+We are going to use the command line client for the deployment. Make sure you have opened the Terminal in SAP Business Application Studio
 
 To deploy the application perform the following steps:
 
-1. Open command prompt.
-2. Login to the account and space:
 
-```
-cf login -sso
-```
-or alternatively
+1. Make sure you are logged into cf.
+  
+2. Navigate to the folder >installation folder</ and ensure you are in the folder that contains the *manifest.yaml* file. You can navigate using the cd .. command
 
-```
-cf login
-```
-
-2. Login to the account and space with *cf login*.
-3. Navigate to the folder >installation folder</
-4. Ensure you are in the folder that contains the *manifest.yaml* file.
-5. Execute the following command: 
+3. Execute the following command: 
 
 ```
 cf push --random-route
 ```
 
-6. Check the console for the final output and that the deployment has worked out.
+4. Check the console for the final output and that the deployment has worked out.
 
-7. Check and remember the URL of your deployed app.
+5. Check and remember the URL of your deployed app.
 
 Example URL: *geo.cfapps.eu10.hana.ondemand.com*
 
-Hint: Using the command ```CF apps``` you can always look up this information
+> **Note** Using the command ```CF apps``` you can always look up this information
 
 Note: replace “geo” with the host name which was entered in the *manifest.yaml* file.
 
-8. Open the URL of your deployed app in a browser. Click on the hyperlink /georelApplication.html
+6. Open the URL of your deployed app in a browser. Click on the hyperlink /georelApplication.html
 
  ![Application](./images/run4.png)
 
@@ -75,7 +63,7 @@ Note: replace “geo” with the host name which was entered in the *manifest.ya
 
 The application supports two scenarios. One is the creation of a new Business Partner in the SAP S/4HANA system, the other scenario is changing the data of an already existing Business Partner in the SAP S/4HANA system.
 
-Note: The app might come with initial content. You should see the database preloaded with two business partners when initially starting the application.
+> **Note** The app might come with initial content. You should see the database preloaded with two business partners when initially starting the application.
 
 ## 1st scenario - Creation of a Business Partner in the SAP S/4HANA Cloud Backend
 
