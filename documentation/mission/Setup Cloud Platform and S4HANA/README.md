@@ -2,6 +2,9 @@
 
 ## Register Your SAP S/4HANA Cloud System
 
+> **Note**
+> Below step has been performed centrally, no action from participants required.
+
 To build extension applications for your SAP S/4HANA Cloud system, you need to connect your SAP S/4HANA Cloud system to your SAP Business Technology Platform global account.
 
 To be able to do this, in respect to authorizations you must be: 
@@ -13,7 +16,7 @@ To be able to do this, in respect to authorizations you must be:
 ### SAP Business Technology Platform
 
 > **Note**
-> This step has been performed centrally, no action from participants required.
+> Below step has been performed centrally, no action from participants required.
 
 1. In your SAP Business Technology Platform Cockpit, open your global account and choose
 *Systems*.
@@ -45,6 +48,9 @@ To be able to do this, in respect to authorizations you must be:
 
 ### SAP S/4HANA Cloud
 
+> **Note**
+> Below step has been performed centrally, no action from participants required.
+
 1. Log onto your SAP S/4HANA Cloud tenant.
 
 2. Navigate to *Home -> Communication Management* tab and choose the tile *Maintain Extensions on SAP BTP*.
@@ -74,6 +80,9 @@ To be able to do this, in respect to authorizations you must be:
 
 ## Set Up Entitlements for Your Subaccount
 
+> **Note**
+> Below step has been performed centrally, no action from participants required.
+
 After you have connected the SAP S/4HANA Cloud system (with status *Enabled* in your SAP S/4HANA Cloud tenant) to the SAP Business Technology Platform, you need to configure entitlements to make this system accessible in the SAP Business Technology Platform subaccount in which you want to build your extension application.
 
 In the next steps you will configure the entitlements and assign the corresponding quota and service plans to the subaccount in which the extension application will reside.
@@ -95,6 +104,9 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a1
 https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22ccf424dae84345f4500c2d8ea.html
 
 ### SAP Business Technology Platform
+
+> **Note**
+> Below step has been performed centrally, no action from participants required.
 
 1. In your SAP Business Technology Platform Cockpit, open your global account and choose *Entitlements --> Entity Assignments*.
 
@@ -131,6 +143,9 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 **Set up your subaccount entitlement for SAP Event Mesh**
 
+> **Note**
+> Below step has been performed centrally, no action from participants required.
+
 1. Click on *Configure Entitlements* and then on *Add Service Plan*
 
 2. In the *Subaccount Entitlements* dialog box, select the service *Event Mesh*
@@ -150,6 +165,9 @@ https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/2f6ed22
 
 
 **Set up your subaccount entitlement for Cloud Foundry Runtime**
+
+> **Note**
+> Below step has been performed centrally, no action from participants required.
 
 1. Click on *Configure Entitlements* and then on *Add Service Plan*.
 
@@ -193,7 +211,8 @@ To allow SAP Business Technology Platform applications to consume events and API
 
 4. In the Create wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance (e.g. *georelmessaging*).
 
-   Hint: you can freely choose the instance name. You would have to do a few changes in the provided code later on, so for simplicity it is recommended to stick to georelmessaging as this is the name we use in the code.
+> **Note**
+> Since a single subaccount is shared among all participants, please use `georelmessaging_(your D number)` (e.g. georelmessaging_d049740) as the name of instance.
 
  ![Plan](./images/setup17.png)
  
@@ -215,6 +234,9 @@ been prefilled for you.
 }
 ``` 
 
+> **Note**
+> The **systemName** has been registered in earlier step, please use `S4HANACloud_PM_my304263` as value for above JSON file.
+
  ![Parameters](./images/setup20.png)
 
 
@@ -232,9 +254,8 @@ been prefilled for you.
 
 5. Select the Service Plan *api-access*, which you use for generic access to APIs in your SAP S/4HANA Cloud system.
 
-   Use **xf_api_bupa** for your instance name.
+   Use **xf_api_bupa_(d number)** for your instance name, e.g. `xf_api_bupa_d049740`.
 
-   Hint: you can freely choose the instance name. You would have to do a few changes in the provided code later on though if you use your own name, so for simplicity it is recommended to stick to xf_api_bupa.
 
 
  ![Instance](./images/setup21.png)
@@ -248,7 +269,10 @@ been prefilled for you.
 8. Copy the template below (please watch for line breaks)
 
 - As “systemName” you must enter the name of your newly registered system. The system name should be prefilled in the content you are replacing - so you can just copy it to an editor before and the just copy it back into the template.
-- As “communicationArrangementName” you must enter a speaking name for your communication arrangement.
+- As “communicationArrangementName” you must enter a speaking name for your communication arrangement. 
+
+> **Note**
+> The **communicationArrangementName** can be `BTP_BUSINESS_PARTNER_PM_(D number)`(e.g. `BTP_BUSINESS_PARTNER_PM_D049740`)
 
 ```
 {
@@ -398,7 +422,7 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
 
 7. Select *default* from the Service Plan Drop Down
 
-8. Enter the *Instance Name:* use *messaging_georel* for the instance name
+8. Enter the *Instance Name:* use *messaging_georel_(D number)* (e.g. `messaging_georel_d049740`) for the instance name
 
 
  ![Instance Name](./images/setup30.png)
@@ -408,7 +432,8 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
 
 10. Copy the template into the parameter field and adjust relevant data:
 
-- Line 3: emname
+- Line 3: emname: EMGeo_(D number)
+- Line 4: The number at the end of `sap/georelations/1` needs to be unique for each participant. We will distribute the number during the course.
 - Line 11 and 16: namespace
 
 Hint: for the namespace you will most likely just have to exchange the 4 digit number to the number of your choice that you had entered for the emClientId in an earlier step. So you would have to replace 1908 in the example below with the 4 characters you chose for the emClientId. 
