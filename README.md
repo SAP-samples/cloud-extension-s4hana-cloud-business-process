@@ -67,11 +67,11 @@ The application requires below set of SAP BTP Entitlements/Quota
 
 ### Step 1: [Setup SAP Business Technology Platform and S/4HANA Cloud](./documentation/mission/Setup%20Cloud%20Platform%20and%20S4HANA/README.md)
 
-### Step 3: [Prepare Development Environment and Install Application](./documentation/mission/Development%20Environment%20and%20Application/README.md)
+### Step 2: [Prepare Development Environment and Install Application](./documentation/mission/Development%20Environment%20and%20Application/README.md)
 
-### Step 4: [Configure and Run Application](documentation/mission/Configure%20and%20Run%20Example%20Application/README.md)
+### Step 3: [Configure and Run Application](documentation/mission/Configure%20and%20Run%20Example%20Application/README.md)
 
-### Step 5: [Demo Script](documentation/mission/Demo%20Script)
+### Step 4: [Demo Script](documentation/mission/Demo%20Script)
 
 ## Known Issues
 
