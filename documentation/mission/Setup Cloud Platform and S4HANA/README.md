@@ -212,7 +212,7 @@ To allow SAP Business Technology Platform applications to consume events and API
 4. In the Create wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance (e.g. *georelmessaging*).
 
 > **Note**
-> Since a single subaccount is shared among all participants, please use `georelmessaging_(your D number)` (e.g. georelmessaging_d049740) as the name of instance.
+> Since a single subaccount is shared among all participants, please use `georelmessaging_(your D number)` (e.g. georelmessaging_d049740) as the name of instance. In addition, in below screenshot, please choose the registered **S4HANACloud_PM_my304263** for System Name dropdown list.
 
  ![Plan](./images/setup17.png)
  
@@ -254,7 +254,7 @@ been prefilled for you.
 
 5. Select the Service Plan *api-access*, which you use for generic access to APIs in your SAP S/4HANA Cloud system.
 
-   Use **xf_api_bupa_(d number)** for your instance name, e.g. `xf_api_bupa_d049740`.
+   Use **xf_api_bupa_(d number)** for your instance name, e.g. `xf_api_bupa_d049740`. In addition, in below screenshot, please choose the registered **S4HANACloud_PM_my304263** for System Name dropdown list.
 
 
 
@@ -433,7 +433,7 @@ When you create a new service instance for SAP Event Mesh, you create a new mess
 10. Copy the template into the parameter field and adjust relevant data:
 
 - Line 3: emname: EMGeo_(D number)
-- Line 4: The number at the end of `sap/georelations/1` needs to be unique for each participant. We will distribute the number during the course.
+- Line 4: The number at the end of `sap/georelations/1` (in this case **1**) needs to be unique for each participant. We will distribute the number during the course.
 - Line 11 and 16: namespace
 
 Hint: for the namespace you will most likely just have to exchange the 4 digit number to the number of your choice that you had entered for the emClientId in an earlier step. So you would have to replace 1908 in the example below with the 4 characters you chose for the emClientId. 

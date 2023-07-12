@@ -6,7 +6,9 @@ In detail you have to adapt the *manifest.yaml* and the *service.js* files.
 
 1. Find the *manifest.yaml* in your installation folder , open it and perform the below
 adjustments, if at all needed. Adjustments are only needed if you have adjusted the services names during the earlier steps or plan for using an app name without the random route option with the push command later on.
-  
+
+> **Note**
+> Please change the value of **name** to `geo_your-d-number`. The value for the two services should also be adpated (i.e. `messaging_georel_your-d-number` and `xf_api_bupa_your-d-number`)
  ![Manifest](./images/run1.png)
   
   In case you are wondering about the correct service names, you can look then up the SAP Business Technology Platform Cockpit.
