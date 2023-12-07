@@ -5,11 +5,11 @@
   "license": "ISC",
   "version": "1.0.0",
   "engines": {
-    "node": "^16"
+    "node": "^18"
   },
   "files": [],
   "dependencies": {
-    "@sap-cloud-sdk/http-client": "^2.6.0",
+    "@sap-cloud-sdk/http-client": "^3.8.1",
     "@sap-cloud-sdk/util": "^2.6.0",
     "@sap/cds": "^6",
     "@sap/cloud-sdk-vdm-business-partner-service": "1.26.0",
@@ -17,7 +17,7 @@
     "@sap/xsenv": "latest",
     "express": "^4.17.1",
     "passport": "^0.6.0",
-    "sqlite3": "^5.1.2",
+    "sqlite3": "^5.1.6",
     "uuid": "^8.3.2"
   },
   "scripts": {
@@ -42,5 +42,8 @@
         }
       }
     }
+  },
+  "devDependencies": {
+    "@sap-cloud-sdk/generator": "^3.8.1"
   }
 }
