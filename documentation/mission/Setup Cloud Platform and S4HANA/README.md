@@ -32,7 +32,7 @@ To be able to do this, in respect to authorizations you must be:
 
  ![Choose Add](./images/setup2.png)
 
-6. The SAP Business Technology Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP Cloud Platform from your SAP S/4HANA Cloud system.  sClick on *Get Token* 
+6. The SAP Business Technology Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP Cloud Platform from your SAP S/4HANA Cloud system. Select the communication scenario groups from the drop down. Click on *get Token*.
 
  ![Get Token](./images/setup3.2.png)
 
