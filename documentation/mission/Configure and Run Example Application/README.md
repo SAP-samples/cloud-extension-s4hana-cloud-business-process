@@ -51,7 +51,7 @@ cf push --random-route
 
 Example URL: *geo.cfapps.eu10.hana.ondemand.com*
 
-> **Note** Using the command ```CF apps``` you can always look up this information
+> **Note** Using the command ```cf apps``` you can always look up this information
 
 Note: replace “geo” with the host name which was entered in the *manifest.yaml* file.
 
