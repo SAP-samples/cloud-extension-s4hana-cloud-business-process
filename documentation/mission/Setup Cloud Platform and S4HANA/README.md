@@ -212,7 +212,7 @@ To allow SAP Business Technology Platform applications to consume events and API
 4. In the Create wizard in the Plan dropdown list, select the service *SAP S/4HANA Cloud Extensibility* with plan *messaging*. Choose a CLI friendly name for your instance (e.g. *georelmessaging*).
 
 > **Note**
-> Since a single subaccount is shared among all participants, please use `georelmessaging_(your D number)` (e.g. georelmessaging_d049740) as the name of instance. In addition, in below screenshot, please choose the registered **S4HANACloud_PM_my304263** for System Name dropdown list.
+> Since a single subaccount is shared among all participants, please use `georelmessaging_(your D number)` (e.g. georelmessaging_d049740) as the name of instance. In addition, in below screenshot, please choose the registered **PMLearning_S/4HANA Cloud system** for System Name dropdown list.
 
  ![Plan](./images/setup17.png)
  
@@ -254,7 +254,7 @@ been prefilled for you.
 
 5. Select the Service Plan *api-access*, which you use for generic access to APIs in your SAP S/4HANA Cloud system.
 
-   Use **xf_api_bupa_(d number)** for your instance name, e.g. `xf_api_bupa_d049740`. In addition, in below screenshot, please choose the registered **S4HANACloud_PM_my304263** for System Name dropdown list.
+   Use **xf_api_bupa_(d number)** for your instance name, e.g. `xf_api_bupa_d049740`. In addition, in below screenshot, please choose the registered **PMLearning_S/4HANA Cloud system** for System Name dropdown list.
 
 
 
