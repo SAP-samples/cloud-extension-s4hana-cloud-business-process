@@ -28,6 +28,8 @@ From a technology perspective, the application is written in javascript and runn
 
  ![app](./images/bas3.png)
 
+make sure you checkout to branch **learning-session**.
+
 5. You can log into Cloud Foundry using the command pallette option. Choose **View** &rarr; **Command Palette**. In the entry section search and choose **Login to Cloud Foundry**
 
  ![app](./images/bas4.png)
