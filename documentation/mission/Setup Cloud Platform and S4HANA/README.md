@@ -38,7 +38,7 @@ To be able to do this, in respect to authorizations you must be:
 
  ![Choose Add](./images/setup2.png)
 
-6. The SAP Business Technology Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP Cloud Platform from your SAP S/4HANA Cloud system. Select the communication scenario groups from the drop down. Click on *get Token*.
+6. The SAP Business Technology Platform generates an integration token so the SAP S/4HANA Cloud system administrator can configure integration with the SAP BTP from your SAP S/4HANA Cloud system. Select the communication scenario groups from the drop down. Click on *get Token*.
 
  ![Get Token](./images/setup3.2.png)
 
@@ -358,7 +358,7 @@ https://help.sap.com/viewer/7dde0e0e3a294f01a6f7870731c5e4ad/SHIP/en-US/1aafa071
 
 1. Log onto your SAP S/4HANA Cloud system
 
-2. Go to Enterprise Event Enablement
+2. Go to Enterprise Event Enablement (Configure Channel Binding)
 
 
  ![Event Enablement](./images/setup24.png)
