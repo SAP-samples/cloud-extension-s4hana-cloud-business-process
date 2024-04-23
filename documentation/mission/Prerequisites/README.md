@@ -1,6 +1,4 @@
 # DISCLAIMER
-This mission is originally developed using SAP Event Mesh service which is only supported as CPEA service. Its sucessor service **SAP Integration Suite, advanced event mesh** is rolled out as BTPEA service. (   ).  Hence the mission will only work with SAP Event Mesh.
-
 
 This mission was initially developed using the SAP Event Mesh service, which is exclusively supported as a CPEA service. Its successor, the SAP Integration Suite, advanced event mesh, is now available as a BTPEA service. (For more details on CPEA and BTPEA please visit [Consumption-Based Commercial Model](https://help.sap.com/docs/btp/sap-business-technology-platform/what-is-consumption-based-commercial-model), for comparision of SAP Event Mesh and SAP Integration Suite Advanced Event Mesh please visit [this blog](https://community.sap.com/t5/technology-blogs-by-sap/sap-integration-suite-advanced-event-mesh-vis-%C3%A0-vis-sap-event-mesh-and-sap/ba-p/13531535). ) Therefore, this mission will only function with SAP Event Mesh.
 
