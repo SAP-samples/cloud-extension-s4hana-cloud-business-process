@@ -3,6 +3,12 @@
 
 ![georel](./documentation/images/georel.jpg)
 
+
+## ⚠ ARCHIVED - NO MAINTENANCE ⚠
+
+📢 **Please be aware that with tool is no longer maintained and the repository is archived**
+
+
 ## Description
 
 Extend SAP S/4HANA Cloud on the SAP Business Technology Platform using state of the art methodologies and technologies. Put an event-driven architecture into action and use the Cloud Application Programming Model (CAP) building on S/4 events and SAP Event Mesh as event broker.
